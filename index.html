@@ -2,75 +2,200 @@
 <html>
 
   <head>
-    <title>Demo &raquo; Using drag callbacks &raquo; gridster.js</title>
+    <title>Demo</title>
     <link rel="stylesheet" type="text/css" href="demos/assets/css/demo.css">
     <link rel="stylesheet" type="text/css" href="dist/jquery.gridster.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="dist/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
-
     <style>
-      #log {
-        margin-top: 20px;
-        max-height: 400px;
-        overflow: auto;
-        max-width: 250px;
-        border: 1px solid #DDD;
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        display: none;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: red;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+      input:checked+.slider {
+        background-color: green;
+      }
+
+      input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
       }
     </style>
   </head>
 
   <body>
 
-    <h1>Drag callbacks</h1>
-
-    <p>Drag some widgets and see the log below.</p>
-
+    <h1>Alocar mesas num andar</h1>
+    <div id="myDIV">Hello</div>
+    <p>Arrastar para onde quiser</p>
     <div class="gridster">
       <ul>
-        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="task-card">0</li>
-        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="task-card">1</li>
-        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="task-card">2</li>
-        <li data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="task-card">3</li>
-        <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="task-card">4</li>
-        <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="task-card">5</li>
-        <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="task-card">6</li>
-        <li data-row="2" data-col="4" data-sizex="1" data-sizey="1" class="task-card">7</li>
-        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="task-card">8</li>
-        <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="task-card">9</li>
-      </ul>
+        <ul class="task-card-list">
+          <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 1
+            <p><label class="switch">
+  <input onclick="toggle(mesa1)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa1">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 2
+            <p><label class="switch">
+  <input onclick="toggle(mesa2)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa2">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="task-card">Mesa 3
+            <p><label class="switch">
+  <input onclick="toggle(mesa3)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa3">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="task-card">Mesa 4
+            <p><label class="switch">
+  <input onclick="toggle(mesa4)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa4">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 5
+            <p><label class="switch">
+  <input onclick="toggle(mesa5)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa5">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 6
+            <p><label class="switch">
+  <input onclick="toggle(mesa6)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa6">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="task-card">Mesa 7
+            <p><label class="switch">
+  <input onclick="toggle(mesa7)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa7">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="2" data-col="4" data-sizex="1" data-sizey="1" class="task-card">Mesa 8
+            <p><label class="switch">
+  <input onclick="toggle(mesa8)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa8">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 9
+            <p><label class="switch">
+  <input onclick="toggle(mesa9)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa9">Mesa Livre</p>
+            </p>
+          </li>
+          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 10
+            <p><label class="switch">
+  <input onclick="toggle(mesa10)" type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+              <p id="mesa10">Mesa Livre</p>
+            </p>
+          </li>
+        </ul>
     </div>
 
-    <h3>Log</h3>
-
     <div id="log"></div>
+    <script type="text/javascript">
+      function toggle(mesa) {
+        if (mesa.innerHTML === "Mesa Livre") {
+          mesa.innerHTML = "Mesa Ocupada";
+        } else {
+          mesa.innerHTML = "Mesa Livre";
+        }
+      }
+    </script>
 
     <script type="text/javascript">
       var gridster;
 
-      $(function() {
+      gridster = $(".gridster ul").gridster({
+        widget_base_dimensions: [200, 100],
+        widget_margins: [5, 5],
+        shift_widgets_up: false,
+        shift_larger_widgets_down: false,
+        draggable: {
+          start: function(e, ui, $widget) {
+            //log.innerHTML = 'START position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
+          },
 
-        var log = document.getElementById('log');
+          drag: function(e, ui, $widget) {
+            //log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top + ' ' + ui.pointer.diff_left + "<br >" + log.innerHTML;
+          },
 
-        gridster = $(".gridster ul").gridster({
-          widget_base_dimensions: [100, 55],
-          widget_margins: [5, 5],
-          draggable: {
-            start: function(e, ui, $widget) {
-              log.innerHTML = 'START position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
-            },
-
-            drag: function(e, ui, $widget) {
-              log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top + ' ' + ui.pointer.diff_left + "<br >" + log.innerHTML;
-            },
-
-            stop: function(e, ui, $widget) {
-              log.innerHTML = 'STOP position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
-            }
+          stop: function(e, ui, $widget) {
+            //log.innerHTML = 'STOP position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
           }
-        }).data('gridster');
-
-
-      });
+        },
+        collision: {
+          wait_for_mouseup: true
+        }
+      }).data('gridster');
     </script>
   </body>
 
