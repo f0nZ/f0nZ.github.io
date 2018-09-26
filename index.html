@@ -1,202 +1,484 @@
-<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <title>Demo</title>
-    <link rel="stylesheet" type="text/css" href="demos/assets/css/demo.css">
-    <link rel="stylesheet" type="text/css" href="dist/jquery.gridster.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="dist/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
-    <style>
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Trimatrix Lab">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-      .switch input {
-        display: none;
-      }
+    <title>Welcome to my homepage</title>
+    <link rel="icon" href="images/fav-icon.png">
 
-      .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: red;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
+    <!--APPLE TOUCH ICON-->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-      .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-      }
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
-      input:checked+.slider {
-        background-color: green;
-      }
+    <!-- MATERIAL ICON FONT -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
 
-      input:focus+.slider {
-        box-shadow: 0 0 1px #2196F3;
-      }
+    <!-- ANIMATION -->
+    <link href="stylesheets/animate.min.css" rel="stylesheet">
 
-      input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-      }
+    <!-- MATERIALIZE -->
+    <link href="stylesheets/materialize.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
-      /* Rounded sliders */
+    <!-- CUSTOM STYLE -->
+    <link href="stylesheets/style.css" id="switch_style" rel="stylesheet">
 
-      .slider.round {
-        border-radius: 34px;
-      }
+</head>
 
-      .slider.round:before {
-        border-radius: 50%;
-      }
-    </style>
-  </head>
+<body>
 
-  <body>
 
-    <h1>Alocar mesas num andar</h1>
-    <p>Arrastar para onde quiser</p>
+    <!--==========================================
+                    HEADER 
+===========================================-->
+    <header id="home">
+        <nav id="theMenu" class="menu">
 
-    <div class="gridster">
-      <ul>
-        <ul class="task-card-list">
-          <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 1
-            <p><label class="switch">
-  <input onclick="toggle(mesa1)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa1">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 2
-            <p><label class="switch">
-  <input onclick="toggle(mesa2)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa2">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="task-card">Mesa 3
-            <p><label class="switch">
-  <input onclick="toggle(mesa3)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa3">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="1" data-col="4" data-sizex="1" data-sizey="1" class="task-card">Mesa 4
-            <p><label class="switch">
-  <input onclick="toggle(mesa4)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa4">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 5
-            <p><label class="switch">
-  <input onclick="toggle(mesa5)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa5">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 6
-            <p><label class="switch">
-  <input onclick="toggle(mesa6)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa6">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="task-card">Mesa 7
-            <p><label class="switch">
-  <input onclick="toggle(mesa7)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa7">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="2" data-col="4" data-sizex="1" data-sizey="1" class="task-card">Mesa 8
-            <p><label class="switch">
-  <input onclick="toggle(mesa8)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa8">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="3" data-col="1" data-sizex="1" data-sizey="1" class="task-card">Mesa 9
-            <p><label class="switch">
-  <input onclick="toggle(mesa9)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa9">Mesa Livre</p>
-            </p>
-          </li>
-          <li data-row="3" data-col="2" data-sizex="1" data-sizey="1" class="task-card">Mesa 10
-            <p><label class="switch">
-  <input onclick="toggle(mesa10)" type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-              <p id="mesa10">Mesa Livre</p>
-            </p>
-          </li>
-        </ul>
+            <!--MENU-->
+            <div id="menu-options" class="menu-wrap">
+
+                <!--PERSONAL LOGO-->
+                <div class="logo-flat">
+                </div>
+                <br>
+
+                <!--OPTIONS-->
+                <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
+                <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
+                <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
+                <a href="#skills"><i class="title-icon fa fa-sliders"></i>Technologies</a>
+                <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
+                <a href="#portfolios"><i class="title-icon fa fa-archive"></i>Portfolios</a>
+                <a href="#interest"><i class="title-icon fa fa-heart"></i>Interest</a>
+            </div>
+
+            <!-- MENU BUTTON -->
+            <div id="menuToggle">
+                <div class="toggle-normal">
+                    <i class="material-icons top-bar">remove</i>
+                    <i class="material-icons middle-bar">remove</i>
+                    <i class="material-icons bottom-bar">remove</i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-background section">
+            <div id="v-card-holder">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+
+                            <!-- V-CARD -->
+                            <div id="v-card" class="card">
+
+                                <!-- PROFILE PICTURE -->
+                                <div id="profile" class="right">
+                                    <img alt="profile-image" class="img-responsive" src="images/profile.png">
+                                    <div class="slant"></div>
+                                </div>
+                                <style>
+                                    body {
+                                        background-color: lightblue;
+                                    }
+                                    @media only screen and (max-width: 767px) {
+                                        body {
+                                            background-color: lightblue;
+                                        }
+                                    }
+                                    </style>
+
+                                <div class="card-content">
+
+                                    <!-- NAME & STATUS -->
+                                    <div class="info-headings">
+                                        <h4 class="text-uppercase left">Nuno Neto</h4>
+                                        <h6 class="text-capitalize left">Informatics Engineer</h6>
+                                    </div>
+
+                                    <!-- CONTACT INFO -->
+                                    <div class="infos">
+                                        <ul class="profile-list">
+                                            <li class="clearfix">
+                                                <span class="title"><i class="material-icons">place</i></span>
+                                                <span class="content">Porto</span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!--LINKS-->
+                                    <div class="links">
+                                        <!-- FACEBOOK-->
+                                        <a href="https://www.facebook.com/nunoarneto" id="first_one" class="social btn-floating indigo"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <!-- FACEBOOK-->
+                                        <a href="mailto:nunoneto17@gmail.com" class="social  btn-floating red darken-3"><i
+                                                class="fa fa-envelope"></i></a>
+                                        <!-- LINKEDIN-->
+                                        <a href="https://www.linkedin.com/in/nuno-ar-neto/" class="social  btn-floating black darken-3"><i
+                                                class="fa fa-linkedin"></i></a>
+                                        <!-- SKYPE-->
+                                        <a href="skype:nunoneto17@gmail.com?add" class="social  btn-floating light-blue darken-3"><i
+                                                class="fa fa-skype"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--==========================================
+                   ABOUT  
+===========================================-->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- DETAILS -->
+                    <div id="about-card" class="card">
+                        <div class="card-content">
+                            <!-- ABOUT PARAGRAPH -->
+                            <p>
+                                Olá, sou o Nuno Neto. Atualmente encontro-me a frequentar o segundo e último ano do Mestrado em Engenharia
+                                Informática,
+                                ramo de Sistemas Computacionais no Instituto Superior de Engenharia do Porto.
+                            </p>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div id="about-btn " class="card-action">
+                            <div class="about-btn">
+                                <!-- DOWNLOAD CV BUTTON -->
+                                <a href="#" class="btn waves-effect">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="log"></div>
-    <script type="text/javascript">
-      function toggle(mesa) {
-        if (mesa.innerHTML === "Mesa Livre") {
-          mesa.innerHTML = "Mesa Ocupada";
-        } else {
-          mesa.innerHTML = "Mesa Livre";
-        }
-      }
-    </script>
+    <!--==========================================
+                   EDUCATION
+===========================================-->
+    <section id="education" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-graduation-cap"></i>Education</h4>
+            </div>
 
-    <script type="text/javascript">
-      var gridster;
+            <div id="timeline-education">
+                <!-- FOURTH TIMELINE -->
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot"><i class="fa fa-graduation-cap"></i></div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">Informatics Engineering</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>Universidade Fernando Pessoa</small>
+                                </h6>
+                                <h6>
+                                    <small>Setembro 2014 - Agosto 2017</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                I completed this degree from this prestigious institution.
+                                I successful completed all the credits without any fallout and got A grade overall.
+                            </p>
 
-      gridster = $(".gridster ul").gridster({
-        widget_base_dimensions: [200, 100],
-        widget_margins: [5, 5],
-        shift_widgets_up: false,
-        shift_larger_widgets_down: false,
-        draggable: {
-          start: function(e, ui, $widget) {
-            //log.innerHTML = 'START position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
-          },
+                        </div>
+                    </div>
+                </div>
+                <!-- FIFTH TIMELINE -->
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot"><i class="fa fa-graduation-cap"></i></div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">Master in Informatics Engineering - Computer Systems</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>Instituto Superior de Engenharia do Porto</small>
+                                </h6>
+                                <h6>
+                                    <small>Setembro 2017 - </small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                Currently in my second and final year @ ISEP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          drag: function(e, ui, $widget) {
-            //log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top + ' ' + ui.pointer.diff_left + "<br >" + log.innerHTML;
-          },
 
-          stop: function(e, ui, $widget) {
-            //log.innerHTML = 'STOP position: ' + ui.position.top + ' ' + ui.position.left + "<br >" + log.innerHTML;
-          }
-        },
-        collision: {
-          wait_for_mouseup: true
-        }
-      }).data('gridster');
-    </script>
-  </body>
+    <!--==========================================
+                   SKILLS
+===========================================-->
+    <section id="skills" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>Technologies</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="skills-card" class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Databases/Libraries/Frameworks</h6>
+                                    </div>
+                                    <div class="skillbar" data-percent="90%">
+                                        <div class="skillbar-title"><span>Android SDK</span></div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="90%">
+                                        <div class="skillbar-title"><span>Bootstrap</span></div>
+                                    </div>
+
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>Laravel</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>libGDX</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>MySQL</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>NodeJS</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>PostgreSQL</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>Pygame</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>Symphony</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>.NET</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Many others...</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- THIRD SKILL SECTION -->
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Tools</h6>
+                                    </div>
+                                    <div class="skillbar" data-percent="70%">
+                                        <div class="skillbar-title"><span>Amazon EC2</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="60%">
+                                        <div class="skillbar-title"><span>Docker</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Jenkins</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Vagrant</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>WSO2</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Many others...</span></div>
+                                    </div>
+                                    <div class="skills-title">
+                                        <h6 class="text-center">Environments</h6>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Android Studio</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>IntelliJ IDEA, PHPStorm, Pycharm, Webstorm</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Visual Studio</span></div>
+                                    </div>
+                                    <div class="skillbar" data-percent="80%">
+                                        <div class="skillbar-title"><span>Many others...</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==========================================
+                   EXPERIENCE
+===========================================-->
+    <section id="experience" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-suitcase"></i>Experience</h4>
+            </div>
+
+            <div id="timeline-experience">
+
+                <!-- FIRST TIMELINE -->
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot">
+                        <h6>D</h6>
+                    </div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">Developer</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">
+                                <h6>
+                                    <small>Universidade Fernando Pessoa</small>
+                                </h6>
+                                <h6>
+                                    <small>Janeiro 2014 - Julho 2014</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                For almost 6 months I made use of a tool called "Articulate Storyline" to 
+                                develop interactive training courses for any device. In the end, 5 programs were developed and a website made in Wordpress to feature the software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--==========================================
+                  PORTFOLIOS
+===========================================-->
+    <section id="portfolios" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center"><i class="title-icon fa fa-archive"></i>Portfolios</h4>
+            </div>
+            <div id="portfolios-card" class="row">
+
+                <!--OPTIONS-->
+                <ul class="nav nav-tabs">
+                    <!--ALL CATEGORIES-->
+                    <li class="active waves-effect list-shuffle"><a id="all-sample" class="active" href="#all"
+                            data-toggle="tab">ALL</a>
+                </ul>
+
+                <!--CATEGORIES CONTENT-->
+                <div class="tab-content">
+
+                    <!--All CATEGORIES-->
+                    <div id="all"></div>
+
+                    <!--CATEGORY 1-->
+                    <div id="a">
+
+                        <!--CATEGORY CONTENT ONE BIG-->
+                        <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
+                            <figure class="port-effect">
+                                <img src="images/licenciatura.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2><span>SPLIT HORIZON</span></h2>
+                                    <p>Browser RTS game made as final course project for Informatics Engineering Degree @ Universidade Fernando Pessoa</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <!--CATEGORY CONTENT TWO SMALL-->
+                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                            <figure class="port-effect">
+                                <img src="images/estagio.png" class="img-responsive" alt="portfolio-demo" />
+                                <figcaption>
+                                    <h2><span>Internship Website Project</span></h2>
+                                    <p>Website made to show in its portfolio work that was done during that time.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SCROLL TO TOP-->
+    <div id="scroll-top">
+        <div id="scrollup"><i class="fa fa-angle-up"></i></div>
+    </div>
+
+    <!--==========================================
+                      FOOTER
+===========================================-->
+
+<footer class="container-fluid text-center foot">
+
+    <div class="copyrights">
+        <p class="white-txt">Nuno Neto © 2018
+            <br>
+        </p>
+        
+    </div>
+    <div class="container center">
+        <ul class="social-icons">
+            <li><a href="https://github.com/f0nZ"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+    <!-- ================== SCRIPTS ================== -->
+    <script src="javascript/jquery-2.1.3.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR API KEY"></script>
+    <script src="javascript/markerwithlabel.min.js"></script>
+    <script src="javascript/retina.min.js"></script>
+    <script src="javascript/scrollreveal.min.js"></script>
+    <script src="javascript/jquery.touchSwipe.min.js"></script>
+    <script src="javascript/custom.js"></script>
+
+
+</body>
 
 </html>
