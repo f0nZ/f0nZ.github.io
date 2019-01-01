@@ -1,0 +1,1433 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html lang="en" class="enter-layout enter enter-page  ie9" xmlns:ng="http://angularjs.org" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="enter-layout enter enter-page " xmlns:ng="http://angularjs.org" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="akuCvRYiSa6unCzWPSOKxj4EyjIYc0tOH63QbI/VDzkUu/143fBcUigJiASXe8nyvO+t2Ew42s1SskqQ9xa5/Q==" />
+<link rel="stylesheet" media="all" href="https://js.gleam.io/assets/w-2702f2f840719c80ded4836320125525d857025a178d3df7d8c38e3eb1b40110.css" />
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:500,700|Lato:400,600,900' rel='stylesheet' type='text/css'>
+<meta charset='utf-8'>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6fcc9884b2","applicationID":"4348758","transactionName":"Il1YFhNXCA9cRxoBXxVAXwcSFxQCXlA=","queueTime":0,"applicationTime":87,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={xpid:"UwYEWV9aGwcDUFlVAgk="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport'>
+<meta content='https://gleam.io/vnks6/win-a-xiaomi-redmi-note-6-pro-smartphone' property='og:url'>
+<meta content='Win a Xiaomi Redmi Note 6 Pro Smartphone' property='og:title'>
+<meta content='https://js.out.sh/assets/open-graph-win-1245e7ae9250de2dd9adb149a89a0ffbb29e1d14774aac233cfe706a7c344e96.png' property='og:image'>
+<meta content='summary' property='twitter:card'>
+<meta content='https://js.out.sh/assets/open-graph-win-1245e7ae9250de2dd9adb149a89a0ffbb29e1d14774aac233cfe706a7c344e96.png' property='twitter:image'>
+<meta content='Display: 6.26 inch FHD+ 19:9 screen ﻿ ​CPU: Qualcomm Snapdragon 636 Octa Core 1.8GHz RAM + ROM: 3GB RAM + 32GB ROM Camera: 12.0MP + 5.0MP rear camera + 2.0MP + 20.0MP front camera' property='og:description'>
+
+<script>
+  window.campaignKeyOverride = "vnks6";
+</script>
+<meta CONTENT='NOINDEX, FOLLOW' NAME='ROBOTS'>
+<title>
+Win a Xiaomi Redmi Note 6 Pro Smartphone
+</title>
+<link href='/favicon.ico' rel='shortcut icon'>
+<script>
+  window.actionMarketingAppName = "Gleam"
+</script>
+<script src="https://js.gleam.io/assets/w-6377861341c7f3f95803d062972fb550c99ba9cdd73c1b756da45ee4606f0bff.js"></script>
+<script>
+//<![CDATA[
+
+if (typeof jQuery === 'undefined') {
+    document.write("\u003clink rel=\"stylesheet\" media=\"all\" href=\"/assets/w-2702f2f840719c80ded4836320125525d857025a178d3df7d8c38e3eb1b40110.css\" /\u003e");
+    document.write("\u003cscript src=\"/assets/w-6377861341c7f3f95803d062972fb550c99ba9cdd73c1b756da45ee4606f0bff.js\"\u003e\u003c/script\u003e");
+    document.write('<span class=apply-cdn-fallback></span>');
+}
+
+//]]>
+</script>
+<script>
+  pageType = $('.enter-page').size() > 0 ? ($('.facebook-page').size() > 0 ? 'facebook' : 'standalone') : 'widget';
+</script>
+<script>
+  pageViewOveride = '/gleam/'+pageType+'/'+"vnks6"+'-'+"win-a-xiaomi-redmi-note-6-pro-smartphone";
+</script>
+</head>
+
+<body>
+<style>
+  html { background-image: linear-gradient(290deg, #55df98, #455b97); }
+</style>
+<div class='body-widget'>
+<a href="https://gleam.io"><img class="site-header-logo" style="height: 64px; width: 64px;" src="https://js.gleam.io/assets/logo-0d8d15a188469151039be73eaed0e107a54ca4f3d707a4f9fe01b330d31eda47.svg" alt="Logo" />
+</a><div class='pseudo-popup-border'>
+<div class='campaign competition language-en' ng-controller='EnterController' ng-init='initContestant({&quot;contestant&quot;:{&quot;id&quot;:41762729,&quot;name&quot;:&quot;Nuno Neto&quot;,&quot;email&quot;:&quot;nunoneto17@gmail.com&quot;,&quot;competition_subscription&quot;:null,&quot;share_key&quot;:&quot;dgW28s&quot;,&quot;completed_details&quot;:true,&quot;banned&quot;:false,&quot;authentications&quot;:[{&quot;id&quot;:29664111,&quot;provider&quot;:&quot;facebook&quot;,&quot;provider_type&quot;:&quot;facebook&quot;,&quot;uid&quot;:&quot;10155091406849523&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;Nuno Neto&quot;,&quot;updated_at&quot;:&quot;Wed, 19 Dec 2018 23:28:03 +0000&quot;,&quot;url&quot;:&quot;http://www.facebook.com/search/people/?q=Nuno+Neto&quot;,&quot;profile_url&quot;:&quot;https://www.facebook.com/app_scoped_user_id/YXNpZADpBWEVCQlhXXzRJZAHlvaTVhMzJySVJHdXlIUWQtaWNQc0p4QXhxUTN0d3BaTGFnUU4xVm41dFFyZA3V5djVmZADV4LWFFcXBVbGNSaTY3Q0lqNkg4MFBQNGEtQTk3UnAtS25IWTUwaGlIYQZDZD/&quot;,&quot;level&quot;:null},{&quot;id&quot;:75514710,&quot;provider&quot;:&quot;discord&quot;,&quot;provider_type&quot;:&quot;discord&quot;,&quot;uid&quot;:&quot;141045057959493632&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;f0nZ&quot;,&quot;updated_at&quot;:&quot;Thu, 18 Oct 2018 11:53:24 +0000&quot;,&quot;url&quot;:null,&quot;profile_url&quot;:null,&quot;level&quot;:null},{&quot;id&quot;:74133587,&quot;provider&quot;:&quot;youtube&quot;,&quot;provider_type&quot;:&quot;youtube&quot;,&quot;uid&quot;:&quot;100197909320757719357&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;UCUTaraau2LzfZH5PVjcV6OQ&quot;,&quot;updated_at&quot;:&quot;Thu, 27 Sep 2018 19:02:55 +0000&quot;,&quot;url&quot;:&quot;http://youtube.com/channel/UCUTaraau2LzfZH5PVjcV6OQ&quot;,&quot;profile_url&quot;:null,&quot;level&quot;:null},{&quot;id&quot;:43668353,&quot;provider&quot;:&quot;twitchtv&quot;,&quot;provider_type&quot;:&quot;twitchtv&quot;,&quot;uid&quot;:&quot;141926326&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;f0nz_&quot;,&quot;updated_at&quot;:&quot;Wed, 12 Sep 2018 01:59:51 +0000&quot;,&quot;url&quot;:&quot;http://twitch.tv/f0nz_&quot;,&quot;profile_url&quot;:null,&quot;level&quot;:null},{&quot;id&quot;:9462609,&quot;provider&quot;:&quot;twitter&quot;,&quot;provider_type&quot;:&quot;twitter&quot;,&quot;uid&quot;:&quot;284232043&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;f0nZ_92&quot;,&quot;updated_at&quot;:&quot;Wed, 08 Jun 2016 21:35:28 +0000&quot;,&quot;url&quot;:&quot;http://twitter.com/f0nZ_92&quot;,&quot;profile_url&quot;:null,&quot;level&quot;:null},{&quot;id&quot;:9462214,&quot;provider&quot;:&quot;steam&quot;,&quot;provider_type&quot;:&quot;steam&quot;,&quot;uid&quot;:&quot;76561197993186945&quot;,&quot;expired&quot;:false,&quot;reference&quot;:&quot;f0nZ&quot;,&quot;updated_at&quot;:&quot;Wed, 08 Jun 2016 21:31:13 +0000&quot;,&quot;url&quot;:&quot;http://steamcommunity.com/profiles/76561197993186945/&quot;,&quot;profile_url&quot;:null,&quot;level&quot;:null}],&quot;viral_share_paths&quot;:{&quot;vnks6&quot;:&quot;/vnks6-dMjmAyKTb1&quot;},&quot;entered&quot;:{},&quot;claims&quot;:{&quot;incentives&quot;:{},&quot;entry_method_coupons&quot;:{}}},&quot;form&quot;:{&quot;name&quot;:&quot;Nuno Neto&quot;,&quot;email&quot;:&quot;nunoneto17@gmail.com&quot;,&quot;competition_subscription&quot;:null},&quot;location_allowed&quot;:true,&quot;trigger_auto_opt_in&quot;:true,&quot;allow_autoticking&quot;:false}); initEntryCount(17261)'>
+<style ng-non-bindable>
+
+
+
+</style>
+
+<script>
+  angular.element(document).ready(function () { window.parent.postMessage(window.actionMarketingAppName+'Loaded'+"vnks6", '*') })
+</script>
+<div class='popup-blocks-container' ng-init='initCampaign({&quot;entryState&quot;:{&quot;formData&quot;:{},&quot;files&quot;:{},&quot;errors&quot;:{}},&quot;entryDetailsState&quot;:{},&quot;appName&quot;:&quot;Gleam&quot;,&quot;campaign&quot;:{&quot;starts_at&quot;:1541779200,&quot;key&quot;:&quot;vnks6&quot;,&quot;banned&quot;:false,&quot;tracking_pixels&quot;:{},&quot;referral_link_id&quot;:280590,&quot;ends_at&quot;:1542643200,&quot;remove_branding&quot;:false,&quot;name&quot;:&quot;Win a Xiaomi Redmi Note 6 Pro Smartphone&quot;,&quot;language&quot;:&quot;en&quot;,&quot;site_url&quot;:&quot;http://www.youtube.com/redskullproduction&quot;,&quot;site_name&quot;:&quot;Redskull Productions&quot;,&quot;finished&quot;:true,&quot;paused&quot;:false,&quot;login_first&quot;:false,&quot;auto_enter&quot;:true,&quot;login_providers&quot;:[&quot;facebook&quot;,&quot;twitter&quot;,&quot;soundcloud&quot;,&quot;instagram&quot;,&quot;youtube&quot;,&quot;tumblr&quot;,&quot;twitchtv&quot;,&quot;steam&quot;,&quot;eventbrite&quot;,&quot;spotify&quot;,&quot;disqus&quot;,&quot;discord&quot;,&quot;pinterest&quot;,&quot;amazon&quot;,&quot;mixer&quot;],&quot;login_types&quot;:[&quot;amazon&quot;,&quot;discord&quot;,&quot;disqus&quot;,&quot;email&quot;,&quot;eventbrite&quot;,&quot;facebook&quot;,&quot;instagram&quot;,&quot;mixer&quot;,&quot;pinterest&quot;,&quot;soundcloud&quot;,&quot;spotify&quot;,&quot;steam&quot;,&quot;tumblr&quot;,&quot;twitchtv&quot;,&quot;twitter&quot;,&quot;youtube&quot;],&quot;all_possible_login_providers&quot;:[&quot;facebook&quot;,&quot;twitter&quot;,&quot;soundcloud&quot;,&quot;instagram&quot;,&quot;youtube&quot;,&quot;youtube_full&quot;,&quot;tumblr&quot;,&quot;twitchtv&quot;,&quot;steam&quot;,&quot;eventbrite&quot;,&quot;spotify&quot;,&quot;disqus&quot;,&quot;discord&quot;,&quot;pinterest&quot;,&quot;amazon&quot;,&quot;mixer&quot;,&quot;producthunt&quot;,&quot;goodreads&quot;],&quot;verified_login_providers&quot;:[&quot;facebook&quot;,&quot;twitter&quot;,&quot;instagram&quot;],&quot;details_first&quot;:false,&quot;show_competition_subscription&quot;:true,&quot;stand_alone_option&quot;:&quot;Gleam&quot;,&quot;stand_alone_url&quot;:&quot;https://gleam.io/vnks6/win-a-xiaomi-redmi-note-6-pro-smartphone&quot;,&quot;landing_page_override&quot;:null,&quot;landing_page_styling&quot;:null,&quot;hide_entry_title&quot;:false,&quot;hide_social_logins&quot;:false,&quot;campaign_type&quot;:&quot;Competition&quot;,&quot;landing_page&quot;:&quot;https://gleam.io/vnks6/win-a-xiaomi-redmi-note-6-pro-smartphone&quot;,&quot;first_and_last_name&quot;:false,&quot;messages&quot;:{},&quot;additional_contestant_details&quot;:false,&quot;splitted_fullname&quot;:false,&quot;optional_lastname&quot;:false,&quot;require_contact_info&quot;:true,&quot;hide_total_entries&quot;:false,&quot;entry_limit&quot;:0,&quot;facebook_url&quot;:&quot;https://www.facebook.com/RedskullProduction/&quot;,&quot;pin_url&quot;:&quot;https://gleam.io/vnks6/win-a-xiaomi-redmi-note-6-pro-smartphone&quot;,&quot;share&quot;:true,&quot;terms_and_conditions&quot;:&quot;\u003cp\u003e- The prize is a Xiaomi Redmi Note 6 Pro - 3GB RAM, 32GB ROM, Snapdragon 636\u003c/p\u003e\u003cp\u003e- International Giveaway - Shipped from China by Gearbest.com\u003c/p\u003e\u003cp\u003e- Sponsored by Gearbest.com\u003c/p\u003e\u003cp\u003e- Gearbest.com and Redskull Productions are not responsible for any customs fees that the parcel may incur upon entering the destination country  \u003c/p\u003e\u003cp\u003eThis promotion is in no way sponsored, endorsed or administered by, or associated with, Instagram or Facebook.\u003c/p\u003e&quot;,&quot;announce_winners&quot;:true,&quot;updating_worth&quot;:0,&quot;loading_icon&quot;:&quot;https://js.gleam.io/images/logo.png&quot;,&quot;multiple_shares&quot;:false,&quot;contestant_details_groups&quot;:[{&quot;full_name&quot;:{&quot;type&quot;:&quot;fullname&quot;,&quot;label&quot;:&quot;Full Name&quot;},&quot;email&quot;:{&quot;type&quot;:&quot;email&quot;,&quot;label&quot;:&quot;Email&quot;}}],&quot;contestant_steps&quot;:1,&quot;post_entry_url&quot;:&quot;&quot;,&quot;pinterest_app_banned&quot;:false,&quot;event_mode&quot;:false,&quot;suppress_redeem_display&quot;:false,&quot;steam_login_base_url&quot;:&quot;https://gleamio.com&quot;,&quot;winners&quot;:[{&quot;entry_number&quot;:10832,&quot;name&quot;:&quot;NUNO NETO&quot;,&quot;image&quot;:&quot;https://scontent.fopo1-1.fna.fbcdn.net/v/t1.0-1/c12.12.155.155a/252408_10150195869379523_2469678_n.jpg?_nc_cat=111&_nc_ht=scontent.fopo1-1.fna&oh=44475785d692236933423924239dce91&oe=5C909977&quot;}],&quot;shortener&quot;:{&quot;url&quot;:&quot;https://wn.nr/urls&quot;,&quot;username&quot;:&quot;any&quot;,&quot;api_key&quot;:&quot;yRE7tNZVVZyEfA&quot;}},&quot;entry_methods&quot;:[{&quot;id&quot;:&quot;3769825&quot;,&quot;entry_type&quot;:&quot;youtube_subscribe&quot;,&quot;type_without_provider&quot;:&quot;subscribe&quot;,&quot;config&quot;:{},&quot;worth&quot;:1,&quot;provider&quot;:&quot;youtube&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:true,&quot;requires_details&quot;:true,&quot;display_information&quot;:true,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:null,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;Subscribe to Redskull on YouTube&quot;,&quot;config2&quot;:&quot;https://youtube.com/channel/UCf_67twWOb9eYH-HX562r6A&quot;,&quot;config3&quot;:null,&quot;config4&quot;:null,&quot;config5&quot;:null,&quot;config6&quot;:null,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:null,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:0,&quot;next_interval_starts_at&quot;:0,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;&quot;,&quot;normal_icon&quot;:&quot;fa-youtube-square&quot;,&quot;normal_icon_color&quot;:&quot;#e03a24&quot;,&quot;unlocked_icon&quot;:&quot;&quot;,&quot;unlocked_icon_color&quot;:&quot;&quot;,&quot;completable&quot;:true,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:null,&quot;timer_action&quot;:null,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[]},{&quot;id&quot;:&quot;3769826&quot;,&quot;entry_type&quot;:&quot;custom_action&quot;,&quot;type_without_provider&quot;:&quot;action&quot;,&quot;config&quot;:{},&quot;worth&quot;:1,&quot;provider&quot;:&quot;custom&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:false,&quot;requires_details&quot;:true,&quot;display_information&quot;:null,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:null,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;Check out the 11.11 Sale from Gearbest&quot;,&quot;config2&quot;:&quot;visit-870255835885&quot;,&quot;config3&quot;:&quot;\u003cp\u003eGet an entry when you visit this page:\u003c/p\u003e\n\u003cp\u003e\u003ca href=\&quot;http://www.redskullproductions.com/gearbest-black-friday-promo/\&quot; class=\&quot;btn btn-info btn-large btn-embossed\&quot;\u003e\u003ci class=\&quot;fa fa-share-square\&quot;\u003e\u003c/i\u003e  Click Here\u003c/a\u003e\u003c/p\u003e&quot;,&quot;config4&quot;:null,&quot;config5&quot;:null,&quot;config6&quot;:&quot;simple&quot;,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:&quot;Use tracking&quot;,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:86400,&quot;next_interval_starts_at&quot;:1546318800,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;visit&quot;,&quot;normal_icon&quot;:&quot;fa-external-link-square&quot;,&quot;normal_icon_color&quot;:&quot;#ee4056&quot;,&quot;unlocked_icon&quot;:&quot;fa-external-link-square&quot;,&quot;unlocked_icon_color&quot;:&quot;#99D517&quot;,&quot;completable&quot;:true,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:&quot;&quot;,&quot;timer_action&quot;:null,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[]},{&quot;id&quot;:&quot;3769827&quot;,&quot;entry_type&quot;:&quot;share_action&quot;,&quot;type_without_provider&quot;:&quot;action&quot;,&quot;config&quot;:{},&quot;worth&quot;:3,&quot;provider&quot;:&quot;share&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:false,&quot;requires_details&quot;:true,&quot;display_information&quot;:null,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:null,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;Refer Friends For Extra Entries&quot;,&quot;config2&quot;:&quot;Help me win a Xiaomi Redmi Note 6 Pro Smartphone from Redskull \u0026 Gearbest&quot;,&quot;config3&quot;:&quot;Hey,\r\n\r\nHave you entered this competition to win %{incentive} yet?\r\n\r\nIf you refer friends you get more chances to win :)\r\n\r\n%{link}&quot;,&quot;config4&quot;:null,&quot;config5&quot;:null,&quot;config6&quot;:null,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[&quot;EMAIL&quot;,&quot;FACEBOOK&quot;,&quot;TWITTER&quot;,&quot;GOOGLE_PLUS&quot;,&quot;TUMBLR&quot;,&quot;PINTEREST&quot;],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:null,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:0,&quot;next_interval_starts_at&quot;:0,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;&quot;,&quot;normal_icon&quot;:&quot;fa-heart&quot;,&quot;normal_icon_color&quot;:&quot;&quot;,&quot;unlocked_icon&quot;:&quot;&quot;,&quot;unlocked_icon_color&quot;:&quot;&quot;,&quot;completable&quot;:false,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:null,&quot;timer_action&quot;:null,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[],&quot;share_suffix&quot;:&quot;28stf&quot;},{&quot;id&quot;:&quot;3769828&quot;,&quot;entry_type&quot;:&quot;twitter_follow&quot;,&quot;type_without_provider&quot;:&quot;follow&quot;,&quot;config&quot;:{},&quot;worth&quot;:1,&quot;provider&quot;:&quot;twitter&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:true,&quot;requires_details&quot;:true,&quot;display_information&quot;:null,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:true,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;RedskullPro&quot;,&quot;config2&quot;:&quot;0&quot;,&quot;config3&quot;:null,&quot;config4&quot;:null,&quot;config5&quot;:null,&quot;config6&quot;:null,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:null,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:0,&quot;next_interval_starts_at&quot;:0,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;&quot;,&quot;normal_icon&quot;:&quot;fa-twitter&quot;,&quot;normal_icon_color&quot;:&quot;&quot;,&quot;unlocked_icon&quot;:&quot;&quot;,&quot;unlocked_icon_color&quot;:&quot;&quot;,&quot;completable&quot;:true,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:null,&quot;timer_action&quot;:null,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[]},{&quot;id&quot;:&quot;3769829&quot;,&quot;entry_type&quot;:&quot;instagram_visit_profile&quot;,&quot;type_without_provider&quot;:&quot;visit_profile&quot;,&quot;config&quot;:{},&quot;worth&quot;:1,&quot;provider&quot;:&quot;instagram&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:true,&quot;requires_details&quot;:true,&quot;display_information&quot;:true,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:null,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;https://www.instagram.com/redskullpro/&quot;,&quot;config2&quot;:&quot;34264178&quot;,&quot;config3&quot;:&quot;redskullpro&quot;,&quot;config4&quot;:&quot;Alex&quot;,&quot;config5&quot;:&quot;Complete&quot;,&quot;config6&quot;:&quot;5&quot;,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:null,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:0,&quot;next_interval_starts_at&quot;:0,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;&quot;,&quot;normal_icon&quot;:&quot;fa-instagram&quot;,&quot;normal_icon_color&quot;:&quot;&quot;,&quot;unlocked_icon&quot;:&quot;&quot;,&quot;unlocked_icon_color&quot;:&quot;&quot;,&quot;completable&quot;:true,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:null,&quot;timer_action&quot;:null,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[]},{&quot;id&quot;:&quot;3769830&quot;,&quot;entry_type&quot;:&quot;youtube_watch&quot;,&quot;type_without_provider&quot;:&quot;watch&quot;,&quot;config&quot;:{},&quot;worth&quot;:1,&quot;provider&quot;:&quot;youtube&quot;,&quot;provider_upgrade&quot;:null,&quot;verified&quot;:false,&quot;value_format&quot;:null,&quot;must_verify&quot;:false,&quot;requires_authentication&quot;:false,&quot;can_authenticate&quot;:true,&quot;requires_details&quot;:true,&quot;display_information&quot;:null,&quot;auth_for_details&quot;:false,&quot;api_fallback&quot;:null,&quot;auto_expandable&quot;:true,&quot;expandable&quot;:true,&quot;double_opt_in&quot;:false,&quot;allowed_file_extensions&quot;:[],&quot;config1&quot;:&quot;Check out my review of the Xiaomi Redmi Note 6 Pro&quot;,&quot;config2&quot;:&quot;https://youtube.com/watch?v=_p0kR-207xg&quot;,&quot;config3&quot;:&quot;_p0kR-207xg&quot;,&quot;config4&quot;:null,&quot;config5&quot;:null,&quot;config6&quot;:null,&quot;config7&quot;:null,&quot;config8&quot;:null,&quot;config9&quot;:null,&quot;config_selections&quot;:[],&quot;iframe_url&quot;:null,&quot;iframe_type&quot;:null,&quot;accepts_file_types&quot;:null,&quot;method_type&quot;:null,&quot;config_toggle&quot;:false,&quot;interval_seconds&quot;:0,&quot;next_interval_starts_at&quot;:0,&quot;actions_required&quot;:0,&quot;template&quot;:&quot;&quot;,&quot;normal_icon&quot;:&quot;fa-youtube&quot;,&quot;normal_icon_color&quot;:&quot;&quot;,&quot;unlocked_icon&quot;:&quot;&quot;,&quot;unlocked_icon_color&quot;:&quot;&quot;,&quot;completable&quot;:true,&quot;maxlength&quot;:&quot;&quot;,&quot;restrict&quot;:null,&quot;mandatory&quot;:false,&quot;workflow&quot;:null,&quot;timer_action&quot;:true,&quot;limit&quot;:0,&quot;always_require_email&quot;:false,&quot;media_action&quot;:false,&quot;preload_images&quot;:[]}],&quot;incentives&quot;:[{&quot;id&quot;:696020,&quot;name&quot;:&quot;Win a Xiaomi Redmi Note 6 Pro Smartphone&quot;,&quot;actions_required&quot;:1,&quot;description&quot;:&quot;\u003cul\u003e\u003cli\u003e\u003cb style=\&quot;font-size: 12px;\&quot;\u003eDisplay:\u003c/b\u003e\u003cspan style=\&quot;font-size: 12px;float: none;\&quot;\u003e 6.26 inch FHD+ 19:9 screen \u003c/span\u003e\u0026#65279;\u003c/li\u003e\u003cli\u003e​\u003cb style=\&quot;font-size: 12px;\&quot;\u003eCPU:\u003c/b\u003e\u003cspan style=\&quot;font-size: 12px;float: none;\&quot;\u003e Qualcomm Snapdragon 636 Octa Core 1.8GHz \u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cb style=\&quot;font-size: 12px;\&quot;\u003eRAM + ROM:\u003c/b\u003e\u003cspan style=\&quot;font-size: 12px;\&quot;\u003e 3GB RAM + 32GB ROM\u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cp\u003e\u003cb style=\&quot;font-size: 12px;\&quot;\u003eCamera:\u003c/b\u003e\u003cspan style=\&quot;font-size: 12px;float: none;\&quot;\u003e 12.0MP + 5.0MP rear camera + 2.0MP + 20.0MP front camera\u003c/span\u003e\u003cbr\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ul\u003e&quot;,&quot;data_type&quot;:&quot;Coupon&quot;,&quot;input_type&quot;:null,&quot;incentive_type&quot;:&quot;Coupon&quot;,&quot;layout&quot;:&quot;OnlyText&quot;}]})'>
+<script>
+  window.messageBundle = {"day":"Day","days":"Days","hour":"Hour","hours":"Hours","minute":"Minute","minutes":"Minutes","second":"Second","seconds":"Seconds","thousand_suffix":"k","entries":"entries","actions":"actions","promotion_ended_prefix":"This ","promotion_ended_suffix":" has ended","campaign_ended":"Ended","promotion_paused_heading":"%{campaign_type} paused","promotion_paused_text":"This %{campaign_type} is currently paused.  Please try again later.","campaign_type_competition":"Competition","campaign_type_reward":"Reward","share_competition_body":"Hey,\r\n\r\nHave you entered this competition to win %{incentive} yet?\r\n\r\nIf you refer friends you get more chances to win :)\r\n\r\n%{link}","share_reward_body":"Hey,\r\n\r\n%{link}","share_copied":"Copied","winning_entry_heading":"Winning Entry","winning_entries_heading":"Winning Entries","facebook_video_album":"Videos","share_note":"Note: To be credited for a referral, your friends must complete at least one action.","share_description_competitions_singular":"Get an extra entry for anyone that enters via this link:","share_description_competitions_plural":"Get %{count} extra entries for anyone that enters via this link:","share_description_rewards":"Complete this action by referring friends","tumblr_reblog_campaign_note":"Note: This will create a new post on your Tumblr blog with this %{campaign_type} embedded.","pinterest_pin_first":"Please use the Pin it button first","pinterest_follow_first":"Please use the Follow button first","pinterest_invalid_board":"Sorry, we could not find this board.","pinterest_invalid_username":"Sorry, we could not find this user","twitter_connect_help":"Connect your Twitter account to verify Twitter actions in 1 click.\u003cbr/\u003eWe will not post without your permission.","twitter_privacy_error":"Sorry, your tweets should not be protected.","twitter_duplicated_error":"You posted this Tweet recently, try again later.","instagram_follow_error":"Sorry, we could not determine if you followed %{username}","instagram_like_error":"Sorry, we could not determine if you liked the photo","feed_error":"Sorry, we could not access your %{service} feed","account_private_error":"Sorry, we cannot check private profiles","action_not_completed_error":"Complete action first","youtube_delayed_error":"Subscription not found, try again in a few minutes","value_bad_error":"Sorry, invalid code. Please recheck.","value_unique_error":"Sorry, that code has already been used.","eventbrite_attend_event_error":"Sorry, we could not determine if you attended the event","eventbrite_attend_venue_error":"Sorry, we could not determine if you attended the venue","steam_play_game_continue_hours":"for %{hours} hours","steam_play_game_error":"Sorry, we could not determine if you played the game","steam_join_group_error":"Sorry, we could not determine if you joined the group (is your profile private or limited?)","steam_community_error":"Please setup your Steam Community profile first","steam_games_privacy_error":"","steam_privacy_error":"Sorry, we cannot check private or limited profiles","steam_throwaway_error":"Sorry, limited Steam accounts are not allowed","no_steam_profile_error":"Sorry, you must setup your Steam Community profile","discord_throwaway_error":"Sorry, only verified Discord accounts are allowed","invalid_email_error":"invalid email","email_taken_error":"email in use","twitter_retweet_action":"Retweet @%{username}","twitter_throwaway_error":"Sorry, throwaway Twitter accounts are not allowed.","twitter_locked_error":"Please visit twitter.com to unlock your Twitter account","unlock_heading_singular":"\u003ci class='fa fa-lock'\u003e\u003c/i\u003e Unlock a Bonus Entry","unlock_heading_plural":"\u003ci class='fa fa-lock'\u003e\u003c/i\u003e Unlock %{count} More Entries","unlock_heading_reward_singular":"\u003ci class='fa fa-lock'\u003e\u003c/i\u003e Unlock Other Actions","unlock_heading_reward_plural":"\u003ci class='fa fa-lock'\u003e\u003c/i\u003e Unlock %{count} Other Actions","unlock_text":"Complete the above %{value} to unlock the rest!","login_one_first":"To begin, please login:","login_using":"Log in using...","media_object_video":"Video","media_object_photo":"Photo","media_object_post":"Post","instagram_media_video":"Video","instagram_media_photo":"Photo","generic_error":"Sorry, something went wrong.","third_party_error":"Sorry, we're having trouble communicating with %{provider}. Please try again later.","login_expired_error":"Sorry, your %{provider} login has expired.  Please try again.","rejected_error":"%{provider} said no: %{message}","promotion_ended_error":"Sorry, this promotion has ended","not_found_error":"Sorry, that account does not seem to exist any more","submission_not_found_error":"Sorry, we cannot find your entry","too_long_error":"Still looking for your entry - this might take some time","reward_limit_error":"You have reached the maximum amount of claims","google_plus_error":"YouTube must be connected to this Google account first","previously_entered_entry":"Sorry, you have completed this action previously","just_missed_error":"Sorry, you just missed out on your %{reward_description}","clock_sync_error":"Sorry, our clocks seem to be out of sync.  Try again in %{seconds} seconds.","mixer_subscribe_error":"Sorry, we could not determine if you were subscribed to %{username}","mixer_self_subscribe_error":"Sorry, you cannot subscribe to your own channel","twitchtv_subscribe_error":"Sorry, we could not determine if you were subscribed to %{username}","twitchtv_self_subscribe_error":"Sorry, you cannot subscribe to your own channel","twitchtv_max_follow_error":"Sorry, you are following too many channels","already_entered_error":"Sorry, it looks like you already entered.  Please try reloading the page.","logged_in_error":"Sorry, you do not seem to be logged in","not_unique_error":"Sorry, you have already used that","cheater_error":"Sorry, you're creating too many entries; try again later.","bad_location_error":"Sorry, this promotion is not open to your location","hash_error":"Sorry, your session seems to have timed out.  Would you like to reload it and try again?","upload_error":"Sorry, your upload failed.  Please try again","reward_description_coupon":"Coupon","reward_description_download":"Download","reward_description_link":"Reward","reward_description_redirect":"Reward","per_week":"per week","per_day":"per day","per_hour":"per hour","worth":"+%{count}","minimum_age_message":"You must be at least %{age} years of age","facebook_check_in_error":"Sorry, we could not determine if you checked-in the page","facebook_check_in_instructions":"Check-in at %{name} using your mobile. You can do this by tagging yourself there or by clicking the Check-In button on their Facebook page.","tooltip_sending":"Sending...","tooltip_complete_details":"Please complete your details to continue","tooltip_complete_action":"Complete action above","tooltip_enter_again_in":"Done! You can enter again in %{delay}","tooltip_enter_again_now":"Done! You can enter again now","tooltip_see_reward":"Done! See your %{reward_type} above","tooltip_email_reward":"Done! Check your email for your %{reward_type}","tooltip_more_entries_to_unlock_singular":"Done! Just one more action to unlock your %{reward_type}","tooltip_more_entries_to_unlock_plural":"Done! Just %{count} more actions to unlock your %{reward_type}","tooltip_undone_entries_to_unlock_singular":"Complete one action to unlock your %{reward_type}","tooltip_undone_entries_to_unlock_plural":"Complete %{count} actions to unlock your %{reward_type}","tooltip_undone_more_entries_to_unlock_singular":"Complete one more action to unlock your %{reward_type}","tooltip_undone_more_entries_to_unlock_plural":"Complete %{count} more actions to unlock your %{reward_type}","tooltip_entering":"Entering...","tooltip_watch_video":"Watch the video","tooltip_done_singular":"Done! You got one entry","tooltip_done_plural":"Done! You got %{count} entries","tooltip_double_opt_in_singular":"Done! Ensure you verify your subscription for your entry","tooltip_double_opt_in_plural":"Done! Ensure you verify your subscription for %{count} entries","tooltip_more_entries_for_entry_singular":"You need to complete 1 other action first","tooltip_more_entries_for_entry_plural":"You need to complete %{count} other actions first","tooltip_share_for_entries":"Share for extra entries","tooltip_share_for_action":"Complete this action by referring friends","tooltip_enter_details":"Complete action below","tooltip_enter_each_week_singular":"Enter each week for an extra entry","tooltip_enter_each_day_singular":"Enter each day for an extra entry","tooltip_enter_each_hour_singular":"Enter each hour for an extra entry","tooltip_enter_each_week_plural":"Enter each week for %{count} more entries","tooltip_enter_each_day_plural":"Enter each day for %{count} more entries","tooltip_enter_each_hour_plural":"Enter each hour for %{count} more entries","tooltip_worth_singular":"This is worth one entry","tooltip_worth_plural":"This is worth %{count} entries","tooltip_invalid_value":"Incorrectly formatted code. Please check and try again.","tooltip_facebook_visit":"Click the visit button above to continue","tooltip_googleplus_visit":"Click the visit button above to continue","tooltip_visit":"Visit the link above to continue","tooltip_delay_singular":"Visit for 1 more second","tooltip_delay_plural":"Visit for %{count} more seconds","tooltip_twitter_username":"Please enter a valid Twitter username to continue","tooltip_twitter_use_button":"Use Tweet button below","tooltip_entry_limit_hit":"Limit of %{count} reached","tooltip_submit_url_invalid_domain":"URL is not %{domain}","tooltip_submit_url_invalid_format":"URL is not valid","tooltip_custom_action_incorrect_answer":"Incorrect answer","tooltip_custom_action_too_many_words":"Too many words","description_complete_more_singular":"Just complete 1 more action below to unlock your %{reward_type}","description_complete_more_plural":"Just complete %{count} more actions below to unlock your %{reward_type}","description_complete_some_singular":"Simply complete any action below to unlock your %{reward_type}","description_complete_some_plural":"Simply complete any %{count} actions below to unlock your %{reward_type}","description_complete_one_singular":"Simply complete the action below to unlock your %{reward_type}","description_complete_one_plural":"Simply complete any action below to unlock your %{reward_type}","upload_filetype_error":"Sorry, you can only upload %{formats} files","upload_size_error":"Sorry, file size is limited to %{megabytes} MB","invalid_url":"","youtube_invalid_video":"Sorry, we could not find this video.","youtube_private_account":"Sorry, your channel should be public.","download_app_android_heading":"Android Users","download_app_android_text":"Download our app for Android.","download_app_ios_heading":"iOS Users","download_app_ios_text":"Download our app for iPhone/iPad.","download_app_ios_button_text":"Available now on the AppStore","download_app_tooltip":"Visit our App page to continue","optional_suffix":"(optional)","email":"Email"};
+</script>
+<div class='popup-block' ng-class='{&#39;light-grey-bg&#39;: unableToEnter()}'>
+<div ng-hide='campaign.showTermsAndConditions' ng-include='&#39;views/enter/index.html&#39;'></div>
+<div ng-include='&#39;views/terms_and_conditions.html&#39;' ng-show='campaign.showTermsAndConditions'></div>
+<div class='footer entry-footer' ng-cloak>
+<span ng-show='::campaign.terms_and_conditions'>
+<a data-hide='.popup-block.down-at-start' data-track-event='###APP_NAME### Click|Terms' href='javascript:void(0)' ng-click='toggleTermsAndConditions()'>{{ ::"Terms \u0026 Conditions" | i18nr | unescapeAmp | unescapeQuote }}</a>
+</span>
+<span class='entry-footer__separator' ng-show='::campaign.terms_and_conditions'>|</span>
+<span ng-if='::!hasCustom(&#39;footer_powered_by&#39;)'>
+<a ng-href='{{::campaign.site_url}}' ng-if='::campaign.remove_branding' rel='noopener' target='_blank'>
+{{ ::"© %{site_name}" | i18nr:'site_name':campaign.site_name | unescapeAmp | unescapeQuote }}
+</a>
+<span ng-if='::!campaign.remove_branding'>
+<a href='https://gleam.io/?via={{::campaign.referral_link_id}}' rel='noopener' target='_blank'>
+<img alt='{{::appName}} Logo' ng-src='{{::defaultLogo}}' style='height: 16px; width: 16px;'>
+{{ ::"Powered by %{app_name}" | i18nr:'app_name':appName | unescapeAmp | unescapeQuote }}
+</a>
+</span>
+</span>
+</div>
+
+</div>
+<script id='views/enter/index.html' type='text/ng-template'>
+<div class='square-row center' ng-if='::campaign.campaign_type == &#39;Competition&#39;'>
+<div class='square-row__row'>
+<div class='color-square red-square' ng-class='::{span4: !campaign.hide_total_entries, span6: campaign.hide_total_entries}'>
+<span class='square-describe mont' id='current-entries'>
+<span class='status'>
+{{ contestantEntries() }}
+</span>
+<span class='description'>{{ ::"Your Entries" | i18nr | unescapeAmp | unescapeQuote }}</span>
+</span>
+</div>
+<div class='color-square blue-square span4' ng-if='::!campaign.hide_total_entries'>
+<div class='square-divider'></div>
+<span class='square-describe mont' id='total-entries'>
+<span class='status' ng-class='{small: manyEntries()}'>
+<span class='current'>
+{{ totalEntries() }}
+<span ng-if='::isCampaignEntryLimit()'>
+/ {{ ::campaign.entry_limit }}
+</span>
+</span>
+</span>
+<span class='description'>{{ ::"Total Entries" | i18nr | unescapeAmp | unescapeQuote }}</span>
+</span>
+</div>
+<div class='color-square purple-square' ng-class='::{span4: !campaign.hide_total_entries, span6: campaign.hide_total_entries}'>
+<div class='square-divider'></div>
+<span class='square-describe mont' data-ends='{{::campaign.ends_at}}' data-starts='{{::campaign.starts_at}}' gl-countdown='' ng-class='{&#39;one-line&#39;: isEnded()}'>
+<span class='status'>
+{{status}}
+</span>
+<span class='description' ng-show='isStarted() || isTestMode()'>
+{{description}}
+<span ng-if='!isEnded() &amp;&amp; isStarted()'>
+{{ ::"Left" | i18nr | unescapeAmp | unescapeQuote }}
+</span>
+<span ng-if='!isEnded() &amp;&amp; !isStarted()'>
+{{ ::"Until Open" | i18nr | unescapeAmp | unescapeQuote }}
+</span>
+</span>
+<span class='description' ng-if='!isStarted() &amp;&amp; !isTestMode()'>
+{{description}}
+{{ ::"Until Open" | i18nr | unescapeAmp | unescapeQuote }}
+</span>
+</span>
+</div>
+</div>
+</div>
+
+<div ng-include='&#39;views/enter/other-logins.html&#39;' ng-show='demandingOtherLogins()'></div>
+<div ng-include='&#39;views/enter/demand-auth.html&#39;' ng-show='demandingAuth()'></div>
+<div ng-include='&#39;views/enter/challenge.html&#39;' ng-show='demandingChallenge()'></div>
+<div ng-include='::&#39;/&#39; + campaign.key + &#39;/views/enter/edit-contestant.html&#39;' ng-show='editingContesant()'></div>
+<div ng-hide='hideEntriesPanel()'>
+<div class='prize-area'></div>
+<div ng-show='contestantState.location_allowed &amp;&amp; !showCookieFix() &amp;&amp; !campaign.banned'>
+<div ng-hide='(isRunning() || isTestMode()) &amp;&amp; !campaign.paused'>
+<span class='text' ng-include='&#39;views/enter/login-status.html&#39;' ng-show='::isReward()'></span>
+<div class='massive-message light-grey-bg center' ng-show='!campaign.winners &amp;&amp; showPromotionEnded()'>
+<i class='fa fa-flag-checkered'></i>
+<h2>
+{{ ::t('promotion_ended_prefix') }}{{ campaignType() }}{{ t('promotion_ended_suffix') }}
+</h2>
+</div>
+<div class='massive-message light-grey-bg center' ng-show='!campaign.winners &amp;&amp; !showPromotionEnded() &amp;&amp; campaign.paused'>
+<i class='fa fa-pause'></i>
+<h2>
+{{ ::t('promotion_paused_heading', { campaign_type: campaignType() }) }}
+</h2>
+<p>
+{{ ::t('promotion_paused_text', { campaign_type: campaignType() }) }}
+</p>
+</div>
+<div class='light-grey-bg' ng-show='campaign.winners &amp;&amp; showPromotionEnded()'>
+<h2 class='center entry-heading'>
+{{ ::pl(campaign.winners.length, 'winning_entry_heading', 'winning_entries_heading') }}
+</h2>
+<div class='flat-row' ng-repeat='winner in ::campaign.winners'>
+<a class='no-underline contestant-border clearfix grey-bg' data-track-event='###APP_NAME### Click|{{::entry_method.provider}}|{{::entry_method.type_without_provider}}' href='javascript:void(0)'>
+<div class='tally wide winner-tally' ng-class='::{&#39;winner-tally--expander&#39;: winner.entry_number &gt; 100000}'>
+#{{::winner.entry_number}}
+</div>
+<span class='icon-wrapper'><img ng-src='{{::(winner.image || &#39;/images/fb-anon.gif&#39;)}}'></span>
+<span class='text'>
+{{::winner.name}}
+</span>
+</a>
+</div>
+</div>
+<div class='massive-message light-grey-bg center' ng-show='showPromotionStartsIn()'>
+<i class='fa fa-clock-o'></i>
+<h2>
+This promotion starts in
+<br>
+<span class='mont' data-ends='{{::campaign.ends_at}}' data-starts='{{::campaign.starts_at}}' gl-countdown=''>
+{{status}} {{description}}
+</span>
+</h2>
+</div>
+</div>
+<div ng-show='requiresInitialLogin() &amp;&amp; (isRunning() || isTestMode())'>
+<span class='text' ng-include='&#39;views/enter/login-status.html&#39;' ng-show='campaign.login_first &amp;&amp; contestantState.contestant.id'></span>
+<div ng-include='::&#39;/&#39; + campaign.key + &#39;/ng-view/enter/contestant-details.html&#39;'></div>
+</div>
+<div ng-hide='requiresInitialLogin()'>
+<div class='entry-content' ng-class='{&#39;requires-mandatory-methods&#39;: requiresMandatoryActions(), &#39;expanded-exists&#39;: entryState.expanded}' ng-include='&#39;views/entry.html&#39;' ng-show='isRunning() || isTestMode()'></div>
+</div>
+</div>
+<div class='center massive-message light-grey-bg' ng-if='::campaign.banned'>
+<i class='fa fa-warning'></i>
+<h2>Promotion disabled</h2>
+<p>Sorry, this promotion has been disabled</p>
+</div>
+<div class='center massive-message light-grey-bg' ng-if='::!campaign.banned &amp;&amp; !contestantState.location_allowed'>
+<i class='fa fa-globe'></i>
+<h2>Sorry, this promotion is not available in your region</h2>
+</div>
+<div class='center massive-message light-grey-bg' ng-if='contestantState.location_allowed &amp;&amp; showCookieFix() &amp;&amp; !campaign.banned'>
+<h2>Cookies Disabled</h2>
+<div ng-if='inFrame()'>
+<p>Sorry, your browser seems to be blocking third-party cookies.</p>
+<p> To continue to enter this promotion, simply:</p>
+<p style='padding-top: 10px'>
+<a class='btn btn-large btn-primary' ng-click='openCookieFix($event)' ng-href='{{::cookieFixUrl()}}' target='_blank'>
+Click here to enter
+</a>
+</p>
+</div>
+<div ng-if='::!inFrame()'>
+<p>Sorry, you must have cookies enabled to enter.</p>
+</div>
+</div>
+</div>
+
+</script>
+<script id='views/enter/login-status.html' type='text/ng-template'>
+<div class='small-bar contestant-logged-in center' ng-show='contestantState.contestant.id'>
+<div class='small-bar--text'>
+<span ng-hide='::isReward()'>
+{{ ::"Entering as" | i18nr | unescapeAmp | unescapeQuote }}
+</span>
+{{contestantState.contestant.name}}
+</div>
+<div class='small-bar__links'>
+<ul class='click-blocks'>
+<li ng-show='contestantState.contestant.email'>
+<a class='no-underline email-bg' href='javascript:void(0)' ng-click='toggleEdit()' uib-tooltip='{{contestantState.contestant.email}}'>
+<i class='fa fa-envelope'></i>
+</a>
+</li><li ng-repeat='authentication in contestantState.contestant.authentications'>
+<a class='no-underline {{::authentication.provider | firstPart}}-bg' ng-href='{{::authentication.url}}' target='_blank' uib-tooltip='{{authentication.reference}}'><i class='fa fa-{{::authentication.provider | firstPart | providerIcon}}'></i></a>
+</li></ul>
+<a href='javascript:void(0)' ng-click='toggleEdit()' ng-hide='contestantState.contestant.banned'>{{ ::"Edit" | i18nr | unescapeAmp | unescapeQuote }}</a>
+<a data-logout-link="true" rel="nofollow" data-method="delete" href="{{::logoutLink()}}">{{ ::"Logout" | i18nr | unescapeAmp | unescapeQuote }}
+</a></div>
+</div>
+<div class='small-bar center' ng-hide='contestantState.contestant.id || campaign.hide_social_logins || campaign.details_first'>
+<div class='small-bar--text'>{{ ::"Login with:" | i18nr | unescapeAmp | unescapeQuote }}</div>
+<ul class='click-blocks'>
+<li ng-repeat='provider in ::campaign.login_types'>
+<a class='no-underline {{::provider | firstPart}}-background popup-window' data-track-event='###APP_NAME### Login|{{::provider}}' href='javascript:void(0)' ng-click='openAuthentication(provider)' uib-tooltip='{{::provider | firstPart | capitalStart | onlyOnDesktop }}'>
+<i class='fa fa-{{::provider | firstPart | providerIcon}}'></i>
+<span class='login-block--prefix'>Login with</span>
+<span class='login-block--text'>
+{{ ::provider | firstPart | tProvider }}
+</span>
+</a>
+</li>
+</ul>
+</div>
+
+</script>
+<script id='views/enter/other-logins.html' type='text/ng-template'>
+<div class='center' id='other-logins' style='padding: 10px; width: 320px; margin: 0 auto;'>
+<h3>Login to your existing account</h3>
+<p>
+<strong>
+{{ contestantState.form.email }}
+</strong>
+</p>
+<p>{{ ::"has already been used to log in to %{app_name}." | i18nr:'app_name':appName | unescapeAmp | unescapeQuote }}</p>
+<p>Please login to your linked account:</p>
+<ul class='unstyled'>
+<li ng-repeat='provider in contestantState.otherLogins'>
+<a class='no-underline {{provider | firstPart}}-border grey-bg popup-window other-login' data-track-event='###APP_NAME### Login|{{provider}}' href='javascript:void(0)' ng-click='openAuthentication(provider)' title='{{provider.capitalize | firstPart}}'>
+<span class='icon-wrapper'><i class='fa fa-{{provider | firstPart | providerIcon}}'></i></span>
+<span class='text capitalize' style='width:146px; text-align: left'>
+{{ provider | firstPart }}
+</span>
+</a>
+</li>
+<li class='center' style='margin-top: 10px;'>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Other Logins&#39;)'>
+Back
+</a>
+</li>
+</ul>
+</div>
+
+</script>
+<script id='views/enter/challenge.html' type='text/ng-template'>
+<div class='challenge'>
+<h2>Prove that you are human</h2>
+<div class='grecaptcha' grecaptcha-site-key='6LeqFB0TAAAAAK8i-wmo25-Fmwf6v9VBmZ90iRyj' grecaptcha='challenge.userResponse'></div>
+</div>
+
+</script>
+<script id='views/enter/demand-auth.html' type='text/ng-template'>
+<div class='center' style='padding: 10px; width: 400px; margin: 0 auto;'>
+<h3>Verification Needed</h3>
+<p>Sorry! We need you to verify that you are a real person. Please login with any of these social networks to get started:</p>
+</div>
+<div class='center login-choice login-types-{{::campaign.login_types.length}}'>
+<ul><li ng-repeat='provider in ::campaign.verified_login_providers'>
+<a class='no-underline {{::provider | firstPart}}-bg popup-window' data-track-event='###APP_NAME### Login|{{::provider}}' href='javascript:void(0)' ng-click='openAuthentication(provider)' uib-tooltip='{{::provider | firstPart | capitalStart}}'>
+<i class='fa fa-{{::provider | firstPart | providerIcon}}'></i>
+<span class='login-block--prefix'>Login with</span>
+<span class='login-block--text'>
+{{ ::provider | firstPart | capitalStart }}
+</span>
+</a>
+</li></ul>
+</div>
+
+</script>
+<script id='views/entry.html' type='text/ng-template'>
+<h2 class='entry-heading center' ng-if='::entry_methods.length &gt; 1 &amp;&amp; !campaign.hide_entry_title'>
+{{ ::"%{count} Ways to Enter" | i18nr:'count':entry_methods.length | unescapeAmp | unescapeQuote }}
+</h2>
+<span class='text' ng-include='&#39;views/enter/login-status.html&#39;'></span>
+<div class='entry-method {{::entry_method.template}}' data-remove-popovers id='em{{::entry_method.id}}' ng-class='{expanded: entryState.expanded == entry_method, template: entry_method.template, &#39;completed-entry-method&#39;: !canEnter(entry_method) &amp;&amp; isEntered(entry_method)}' ng-repeat='entry_method in ::entry_methods'>
+<a class='no-underline enter-link {{::entry_method.provider}}-border clearfix grey-bg' data-track-event='###APP_NAME### Click|{{::entry_method.provider}}|{{::entry_method.type_without_provider}}' href='javascript:void(0)' ng-class='{actioned: enoughEntryDetails(entry_method) || isClaimed(entry_method), mandatory: entry_method.mandatory, loading: entry_method.entering, done: !canEnter(entry_method) &amp;&amp; isEntered(entry_method), interval: entry_method.interval_seconds &gt; 1, has_coupon: entry_method.coupon, unavailable: entryMethodCouponNotAvailable(entry_method), default: !entry_method.entering &amp;&amp; canEnter(entry_method) &amp;&amp; !isClaimed(entry_method) &amp;&amp; entryState.expanded != entry_method}' ng-click='enterLinkClick(entry_method)'>
+<span class='tally' data-worth='{{::entry_method.worth}}' ng-hide='hideTally(entry_method)' tooltip-placement='left' uib-tooltip='{{tallyTooltip(entry_method)}}'>
+<span ng-hide='hideTallyNumber(entry_method)'>
+<span ng-show='::entry_method.worth &lt; 1000'>{{tallyText(entry_method)}}</span>
+<small ng-show='::entry_method.worth &gt;= 1000'>{{tallyText(entry_method)}}</small>
+<small class='tally__text' ng-show='::entry_method.interval_seconds == 3600'>per hour</small>
+<small class='tally__text' ng-show='::entry_method.interval_seconds == 86400'>per day</small>
+<small class='tally__text' ng-show='::entry_method.interval_seconds == 604800'>per week</small>
+<small class='tally__text' ng-show='::entry_method.coupon'>left</small>
+</span>
+<i class='fa' ng-class='tallyIcon(entry_method)'></i>
+</span>
+<span class='icon-wrapper' ng-style='{backgroundColor: entryMethodColor(entry_method), color: entryMethodIconColor(entry_method)}'><i class='fa {{entryMethodIcon(entry_method)}}'></i></span>
+<span class='vertical-align-helper'></span>
+<span class='text user-links' ng-include='::&#39;views/entry-text/&#39;+entry_method.entry_type+&#39;.html&#39;'></span>
+</a>
+<div class='expandable'>
+<div ng-include='entryMethodView(entry_method)'></div>
+<div ng-if='showActionFooter(entry_method)'>
+<div class='footer entry-footer' ng-cloak>
+<span ng-show='::campaign.terms_and_conditions'>
+<a data-hide='.popup-block.down-at-start' data-track-event='###APP_NAME### Click|Terms' href='javascript:void(0)' ng-click='toggleTermsAndConditions()'>{{ ::"Terms \u0026 Conditions" | i18nr | unescapeAmp | unescapeQuote }}</a>
+</span>
+<span class='entry-footer__separator' ng-show='::campaign.terms_and_conditions'>|</span>
+<span ng-bind-html='::&#39;{{ ::&quot;\u003cspan class=\&quot;translation_missing\&quot; title=\&quot;translation missing: en.footer_powered_by, locale: en\&quot;\u003eFooter Powered By\u003c/span\u003e&quot; | i18nr | unescapeAmp | unescapeQuote }}&#39;' ng-if='::hasCustom(&#39;footer_powered_by&#39;)'></span>
+<span ng-if='::!hasCustom(&#39;footer_powered_by&#39;)'>
+<a ng-href='{{::campaign.site_url}}' ng-if='::campaign.remove_branding' rel='noopener' target='_blank'>
+{{ ::"© %{site_name}" | i18nr:'site_name':campaign.site_name | unescapeAmp | unescapeQuote }}
+</a>
+<span ng-if='::!campaign.remove_branding'>
+<a href='https://gleam.io/?via={{::campaign.referral_link_id}}' rel='noopener' target='_blank'>
+<img alt='{{::appName}} Logo' ng-src='{{::defaultLogo}}' style='height: 16px; width: 16px;'>
+{{ ::"Powered by %{app_name}" | i18nr:'app_name':appName | unescapeAmp | unescapeQuote }}
+</a>
+</span>
+</span>
+</div>
+
+</div>
+</div>
+<div ng-if='::entry_method.preload_images.length &gt; 0' style='display: none'>
+<img ng-repeat='image in entry_method.preload_images' ng-src='{{image}}'>
+</div>
+</div>
+<div class='unlock-text user-links' ng-show='::nonMandatoryEntriesCount() &gt; 0'>
+<h3 class='center' ng-bind-html='::pl(nonMandatoryEntriesCount(), &#39;unlock_heading_singular&#39;, &#39;unlock_heading_plural&#39;)' ng-if='::!isReward()'></h3>
+<h3 class='center' ng-bind-html='::pl(nonMandatoryEntriesCount(), &#39;unlock_heading_reward_singular&#39;, &#39;unlock_heading_reward_plural&#39;)' ng-if='::isReward()'></h3>
+<p class='center' ng-bind-html='::t(&#39;unlock_text&#39;, {value: tallyType()})' style='margin: 0; padding-bottom: 15px;'></p>
+</div>
+
+</script>
+<script id='views/terms_and_conditions.html' type='text/ng-template'>
+<h2 class='entry-heading bg-grey cursor' ng-click='toggleTermsAndConditions()'>
+<i class='fa fa-remove pull-right'></i>
+{{ ::"Terms \u0026 Conditions" | i18nr | unescapeAmp | unescapeQuote }}
+</h2>
+<div class='contents' id='terms-and-conditions'>
+<div class='user-fragment' ng-bind-html='::campaign.terms_and_conditions | forceHTML'></div>
+</div>
+</script>
+<script id='/vnks6/views/enter/edit-contestant.html' type='text/ng-template'>
+<form class='contestant compact-box form-compact' name='contestantEditForm' style='padding-top: 15px'>
+<fieldset class='inputs' style='padding-bottom: 10px'>
+<div class='form-horizontal'>
+<div class='input required stringish form-group' ng-class='{error: contestantEditForm.name.$invalid &amp;&amp; contestantEditForm.name.$dirty, success: contestantEditForm.name.$valid}'>
+<label class='control-label' for='contestant[name]'>Full Name</label>
+<div class='form-wrapper'>
+<input id='contestant[name]' name='name' ng-model-options='{ debounce: 300 }' ng-model='contestantState.form.name' ng-pattern='::nameRegex' placeholder='Alice Smith' required style='width: 246px' type='text'>
+<div class='help-inline' ng-hide='contestantEditForm.name.$viewValue'>Required</div>
+</div>
+</div>
+
+<div class='email input required stringish form-group' ng-class='{error: ((contestantState.form.email &amp;&amp; contestantState.form.email == contestantState.failedEmail) || (contestantEditForm.email.$invalid &amp;&amp; contestantEditForm.email.$dirty)), success: contestantState.form.email != contestantState.failedEmail &amp;&amp; contestantEditForm.email.$valid}'>
+<label class='control-label' for='contestant[email]'>Email</label>
+<div class='form-wrapper'>
+<input id='contestant[email]' name='email' ng-change='contestantState.failedEmail = nil' ng-model-options='{ debounce: 300 }' ng-model='contestantState.form.email' pattern='[A-Z0-9._%a-z\-+]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,12}' placeholder='alice.smith@example.com' required style='width: 246px; -webkit-appearance: none;' type='email'>
+<div class='help-inline' ng-hide='contestantEditForm.email.$viewValue'>Required</div>
+<div class='help-inline error' ng-show='contestantState.form.email &amp;&amp; contestantState.form.email == contestantState.failedEmail'>
+{{ t(contestantState.failedEmailKey) }}
+</div>
+</div>
+</div>
+
+</div>
+<div class='boolean input optional form-group' ng-if='::!isReward() &amp;&amp; campaign.show_competition_subscription'>
+<div class='form-wrapper'>
+<label class='checkbox'>
+<span class='icon'></span>
+<span class='icon-to-fade'></span>
+<input ng-model='contestantState.form.competition_subscription' type='checkbox'>
+{{ ::"Notify me of other %{site_name} Competitions" | i18nr:'site_name':campaign.site_name | unescapeAmp | unescapeQuote }}
+</label>
+</div>
+</div>
+<ul class='remover-blocks' ng-if='contestantState.contestant.authentications'>
+<li class='remover-blocks__option {{::authentication.provider | firstPart}}-bg' ng-hide='authentication.toRemove' ng-repeat='authentication in contestantState.contestant.authentications'>
+<a class='remover-blocks__viewer' ng-href='{{::(authentication.profile_url || authentication.url)}}' rel='noopener' target='_blank'>
+<i class='remover-blocks__icon fa fa-{{::authentication.provider | firstPart | providerIcon}}'></i>
+<div class='remover-blocks__name'>
+{{authentication.reference || authentication.uid }}
+</div>
+</a>
+<a class='remover-blocks__remove no-underline' href='javascript:void(0)' ng-click='prepareUnlink(authentication)'>
+<i class='fa fa-remove'></i>
+</a>
+</li>
+</ul>
+</fieldset>
+<div class='form-actions center'>
+<button class='btn btn-primary' ng-click='updateContestant()' ng-disabled='contestantState.updating || contestantEditForm.$invalid'>{{ ::"Save" | i18nr | unescapeAmp | unescapeQuote }}</button>
+&nbsp;
+<a href='javascript:void(0)' ng-click='toggleEdit()' ng-disabled='contestantState.updating'>{{ ::"Cancel" | i18nr | unescapeAmp | unescapeQuote }}</a>
+</div>
+</form>
+
+</script>
+</div>
+<script id='views/entry-text/custom_action.html' type='text/ng-template'>
+{{ customActionText(entry_method) }}
+
+</script>
+<script id='views/entry-details/custom_action.html' type='text/ng-template'>
+<form class='entry_details compact-box form-compact' name='entryDetailsForm'>
+<div class='form-compact__content'>
+<div class='form-compact__part user-fragment center' ng-bind-html='::entry_method.config3' ng-class='::{&#39;visit-trigger&#39;: (entry_method.workflow == &#39;VisitDelay&#39; || entry_method.template == &#39;visit&#39;) &amp;&amp; !entry_method.config4}' ng-if='::entry_method.config3'>
+<div ng-if='::entry_method.iframe_url'>
+<iframe allowtransparency='true' class='custom-action-iframe custom-action-iframe--{{::entry_method.iframe_type}}' frameborder='0' ng-src='{{::iframeUrl(entry_method)}}' scrolling='no' style='border:none; overflow:hidden;'></iframe>
+</div>
+</div>
+<div class='form-compact__part' ng-if='::entry_method.config4'>
+<div class='text input optional form-group' ng-show='::entry_method.config4'>
+<div class='form-wrapper center'>
+<label for='em{{::entry_method.id}}Details'>
+<h4 class='center'>
+{{ ::entry_method.config4 }}
+</h4>
+</label>
+<div ng-if='::!entry_method.config6'>
+<div ng-if='::(entry_method.config5 == &#39;1&#39; &amp;&amp; entry_method.config9)' style='width: 85%; display: inline-block'>
+<span class='pull-right'>
+{{ entryState.formData[entry_method.id]|wordcount }}/{{ entry_method.config9 }}
+</span>
+</div>
+<textarea focus-on='entry_method.method_type == &#39;Ask a question&#39; &amp;&amp; entryState.expanded == entry_method &amp;&amp; !entryState.autoExpanded' id='em{{::entry_method.id}}Details' name='data' ng-class='{invalid: continueDisabled(entry_method)}' ng-model-options='{ debounce: 200 }' ng-model='entryState.formData[entry_method.id]' required style='height: 43px' type='text'></textarea>
+</div>
+<div ng-if='::entry_method.config6'>
+<div class='input-append code-entry'>
+<input id='em{{::entry_method.id}}Details' maxlength='{{::entry_method.maxlength}}' name='data' ng-change='verifiedValueChanged(entry_method)' ng-class='{&#39;ng-valid&#39;: verifyStatus(entry_method) == &#39;good&#39;}' ng-model='entryState.formData[entry_method.id]' placeholder='{{::entry_method.config.placeholder(entry_method)}}' restrict='{{::entry_method.restrict}}' type='text'>
+<span class='add-on' ng-switch='verifyStatus(entry_method)'>
+<i class='fa fa-pencil' ng-switch-default tooltip-placement='left' uib-tooltip='Please enter'></i>
+<i class='fa fa-times color-red' ng-switch-when='bad'></i>
+<i class='fa fa-times color-red' ng-switch-when='unique'></i>
+<i class='fa fa-refresh fa-spin' ng-switch-when='checking'></i>
+<i class='fa fa-check color-green' ng-switch-when='good'></i>
+</span>
+</div>
+<p class='color-red' ng-switch='verifyStatus(entry_method)'>
+<span ng-switch-when='bad'>
+Sorry, invalid code. Please recheck.
+</span>
+<span ng-switch-when='unique'>
+Sorry, that code has already been used.
+</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='form-actions center'>
+<div style='display: inline-block; position: relative; z-index: 1' uib-tooltip='{{continueTooltip(entry_method)}}'>
+<a class='btn btn-primary' ng-click='saveEntryDetails(entry_method)' ng-disabled='continueDisabled(entry_method)'>
+<span ng-hide='!(isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed)'>
+{{ pl(entry_method.config.remainingSeconds(entry_method), "tooltip_delay_singular", "tooltip_delay_plural") }}
+</span>
+<span ng-hide='isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed'>
+Continue
+</span>
+</a>
+</div>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Custom&#39;)'>
+Cancel
+</a>
+</div>
+</form>
+
+</script>
+<script id='views/entry-text/instagram_visit_profile.html' type='text/ng-template'>
+Visit
+<span class='dotted-underline' data-container='#em{{::entry_method.id}}' data-content-finder='#em{{::entry_method.id}}-popover-content' data-html='true' data-more-popover='' data-placement='top'>@{{ ::entry_method.config3 }}</span>
+on Instagram
+<div id='em{{ ::entry_method.id }}-popover-content' style='display:none'>
+<a href='https://instagram.com/{{ ::entry_method.config3 }}' rel='noopener' target='_blank'>
+instagram.com/{{ ::entry_method.config3 }}
+</a>
+</div>
+
+</script>
+<script id='views/entry-details/instagram_visit_profile.html' type='text/ng-template'>
+<form class='entry_details compact-box form-compact'>
+<div class='form-compact__content center'>
+<div class='form-compact__part'>
+<p>
+<span ng-if='::entry_method.worth == 1'>{{ ::"Unlock an entry for visiting the %{page_name} Instagram page" | i18nr:'count':entry_method.worth:'page_name':entry_method.config4 || entry_method.config3 | unescapeAmp | unescapeQuote }}</span>
+<span ng-if='::entry_method.worth &gt; 1'>{{ ::"Unlock %{count} entries for visiting the %{page_name} Instagram page" | i18nr:'count':entry_method.worth:'page_name':entry_method.config4 || entry_method.config3 | unescapeAmp | unescapeQuote }}</span>
+</p>
+</div>
+<div class='form-compact__part'>
+<a class='btn btn-info btn-large btn-embossed' ng-click='triggerVisit(entry_method.id, false)' ng-href='https://instagram.com/{{ ::entry_method.config3 }}?ref=badge' rel='noopener' target='_blank'>
+Visit
+{{ ::(entry_method.config4 || entry_method.config3) | unescapeQuote }}
+on Instagram
+&nbsp;
+<i class='fa fa-external-link-square'></i>
+</a>
+</div>
+<div class='form-compact__part'>
+<div class='text input optional form-group' ng-show='entry_method.config5 == &#39;Question&#39; &amp;&amp; hasVisited(entry_method)'>
+<div class='form-wrapper center'>
+<label for='em{{::entry_method.id}}Details' style='padding: 0 20px;'>
+<h4 class='center' style='margin-top: 10px;'>
+{{ ::entry_method.config7 }}
+</h4>
+</label>
+<div class='center' ng-if='::!entry_method.config8'>
+<textarea id='em{{::entry_method.id}}Details' name='data' ng-model='entryState.formData[entry_method.id]' required style='height: 43px' type='text'></textarea>
+</div>
+<div class='center' ng-if='::entry_method.config8'>
+<select id='em{{::entry_method.id}}Details' name='data' ng-model='entryState.formData[entry_method.id]' required style='width: 300px' type='text'>
+<option ng-repeat='option in ::entry_method.config8|commaSplit|uniq' ng-value='option'>
+{{::option}}
+</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='form-actions center'>
+<div style='display: inline-block; position: relative; z-index: 1' uib-tooltip='{{continueTooltip(entry_method)}}'>
+<a class='btn btn-primary' ng-click='continueDisabled(entry_method) || confirmAction(entry_method, entryState.formData[entry_method.id] || &#39;V&#39;)' ng-disabled='continueDisabled(entry_method)'>
+<span ng-hide='!(isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed)'>
+{{ pl(entry_method.config.remainingSeconds(entry_method), "tooltip_delay_singular", "tooltip_delay_plural") }}
+</span>
+<span ng-hide='isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed'>
+Continue
+</span>
+</a>
+</div>
+</div>
+</form>
+
+</script>
+<script id='views/entry-text/share_action.html' type='text/ng-template'>
+{{ ::entry_method.config1 }}
+</script>
+<script id='views/entry-details/share_action.html' type='text/ng-template'>
+<div class='entry_details compact-box form-compact'>
+<div class='form-compact__content'>
+<div class='form-compact__part'>
+<p class='center' ng-if='::!isReward()'>{{::pl(entry_method.worth, &#39;share_description_competitions_singular&#39;, &#39;share_description_competitions_plural&#39;)}}</p>
+<p class='center' ng-if='::isReward()'>{{::t(&#39;share_description_rewards&#39;)}}</p>
+</div>
+<div class='form-compact__part'>
+<div class='well center share-link' style='display: block !important'>
+<div class='share-link__link'>
+{{shareLink(entry_method, true)}}
+</div>
+<a class='share-link__copy-button copy btn btn-info btn-mini' data-clipboard-text='{{ shareLink(entry_method) }}' ng-show='shareLink(entry_method)' ngclipboard ngclipboard-error='copyFallback(shareLink(entry_method))' ngclipboard-success='copySuccess(entry_method)'>
+<i class='fa fa-files-o'></i>
+</a>
+</div>
+</div>
+<div class='form-compact__part center' ng-if='isAnyShareMethodAvailable(entry_method)'>
+<div class='share-link-loading' ng-if='!shareLink(entry_method)'>
+<p>Loading...</p>
+</div>
+<div ng-if='shareLink(entry_method)'>
+<p>Share to:</p>
+<ul class='inline share-buttons' ng-class='{&#39;small&#39;: availableShareMethodCount(entry_method)&gt;6}' style='display: block !important'>
+<li ng-if='isEmailShareAvailable(entry_method)'>
+<a class='cursor no-underline email-bg' ng-click='trackViralShareClick(&#39;Email&#39;)' ng-href='{{mailtoShareLink(entry_method)}}' target='{{ mailtoTarget() }}'>
+<i class='fa fa-envelope'></i>
+</a>
+</li>
+<li ng-if='isWhatsappShareAvailable(entry_method)'>
+<a class='cursor no-underline whatsapp-bg' ng-click='trackViralShareClick(&#39;Whatsapp&#39;)' ng-href='{{whatsappShareLink(entry_method)}}' target='_parent'>
+<i class='fa fa-whatsapp'></i>
+</a>
+</li>
+<li ng-if='isMessengerShareAvailable(entry_method)'>
+<a class='cursor no-underline messenger-bg' ng-click='trackViralShareClick(&#39;Messenger&#39;)' ng-href='{{messengerShareLink(entry_method)}}' target='_parent'>
+<i class='fa fa-messenger'></i>
+</a>
+</li>
+<li ng-if='isSmsShareAvailable(entry_method)'>
+<a class='cursor no-underline sms-bg' ng-click='trackViralShareClick(&#39;SMS&#39;)' ng-href='{{smsShareLink(entry_method)}}' target='_parent'>
+<i class='fa fa-comment-o fa-flip-horizontal'></i>
+</a>
+</li>
+<li ng-if='isFacebookShareAvailable(entry_method)'>
+<a class='cursor no-underline facebook-bg' ng-click='trackViralShareClick(&#39;Facebook&#39;); facebookShare(entry_method)'>
+<i class='fa fa-facebook' style='display: block !important'></i>
+</a>
+</li>
+<li ng-if='isTwitterShareAvailable(entry_method)'>
+<a class='cursor no-underline twitter-bg' ng-click='trackViralShareClick(&#39;Twitter&#39;); twitterShare(entry_method)'>
+<i class='fa fa-twitter' style='display: block !important'></i>
+</a>
+</li>
+<li ng-if='isGooglePlusShareAvailable(entry_method)'>
+<a class='cursor no-underline googleplus-bg' ng-click='trackViralShareClick(&#39;GooglePlus&#39;); googlePlusShare(entry_method)'>
+<i class='fa fa-google-plus' style='display: block !important'></i>
+</a>
+</li>
+<li ng-if='isTumblrShareAvailable(entry_method)'>
+<a class='cursor no-underline tumblr-bg' ng-click='trackViralShareClick(&#39;Tumblr&#39;); tumblrShare(entry_method)'>
+<i class='fa fa-tumblr' style='display: block !important'></i>
+</a>
+</li>
+<li ng-if='isLinkedinShareAvailable(entry_method)'>
+<a class='cursor no-underline linkedin-bg' ng-click='trackViralShareClick(&#39;Linkedin&#39;); linkedinShare(entry_method)'>
+<i class='fa fa-linkedin' style='display: block !important'></i>
+</a>
+</li>
+<li ng-if='isPinterestShareAvailable(entry_method)'>
+<a class='cursor no-underline pinterest-bg' ng-click='trackViralShareClick(&#39;Pinterest&#39;); pinterestShare(entry_method)'>
+<i class='fa fa-pinterest' style='display: block !important'></i>
+</a>
+</li>
+</ul>
+</div>
+<p class='center'>{{::t(&#39;share_note&#39;, {campaign_type: campaignType()})}}</p>
+</div>
+</div>
+</div>
+
+</script>
+<script id='views/entry-text/twitter_follow.html' type='text/ng-template'>
+Follow
+<span class='dotted-underline' data-container='#em{{::entry_method.id}}' data-content-finder='#em{{::entry_method.id}}-popover-content' data-html='true' data-more-popover='' data-placement='top'>@{{ ::entry_method.config1 }}</span>
+on Twitter
+<div id='em{{ ::entry_method.id }}-popover-content' style='display:none'>
+<a href='https://twitter.com/{{::entry_method.config1}}' rel='noopener' target='_blank'>
+twitter.com/{{ ::entry_method.config1 }}
+</a>
+</div>
+
+</script>
+<script id='views/entry-details/twitter_follow.html' type='text/ng-template'>
+<div class='entry_details compact-box form-compact'>
+<div class='form-compact__content center'>
+<div class='form-compact__part'>
+<div style='line-height: 35px; padding-bottom: 13px; margin-top: -5px;'>
+<a class='xl twitter-button' ng-click='showExtra(entry_method)' ng-href='https://twitter.com/intent/follow?screen_name={{ ::entry_method.config1 | encodeUrl }}' target='_blank'>
+<i></i>
+<span class='twitter-label'>
+Follow
+</span>
+</a>
+&nbsp;
+
+<strong ng-hide='entry_method.api_denied || isAuthenticated(entry_method, &#39;twitter&#39;)' style='vertical-align: middle'>
+Or
+&nbsp;
+</strong>
+<a class='xl twitter-button' data-track-event='###APP_NAME### SubLogin|{{::entry_method.provider}}' href='javascript:void(0)' ng-click='openAuthentication(entry_method.provider)' ng-hide='entry_method.api_denied || isAuthenticated(entry_method, &#39;twitter&#39;)' title='{{::provider.capitalize}}'>
+<i></i>
+<span class='twitter-label'>
+Connect Your Twitter Account
+</span>
+</a>
+</div>
+<p class='center' ng-bind-html='t(&#39;twitter_connect_help&#39;)' ng-hide='entry_method.api_denied || isAuthenticated(entry_method, &#39;twitter&#39;)'></p>
+</div>
+<div class='form-compact__part center'>
+<p class='center' ng-hide='entry_method.show_extra || isAuthenticated(entry_method, &#39;twitter&#39;)'>
+<a href='javascript:void(0)' ng-click='showTwitterExtra(entry_method)'>
+<small>
+Already followed?
+</small>
+</a>
+</p>
+<form class='compact-box entry_details twitter-username' name='entryDetailsForm' ng-show='entry_method.show_extra || isAuthenticated(entry_method, &#39;twitter&#39;)' style='margin-bottom: 0'>
+<div class='input-append' ng-hide='isAuthenticated(entry_method, &#39;twitter&#39;)' style='margin-bottom: 0'>
+<label class='inline-too' for='em{{::entry_method.id}}Details' style='margin-bottom: 0'>Username</label>
+<input class='twitter-username__field' id='em{{::entry_method.id}}Details' name='data' ng-enter='saveEntryDetails(entry_method)' ng-init='entryState.formData[entry_method.id] ? null : entryState.formData[entry_method.id] = {}' ng-model='entryState.formData[entry_method.id][&#39;twitter_username&#39;]' placeholder='@MyName' type='text'>
+<a class='btn btn-primary' ng-click='saveEntryDetails(entry_method)' ng-disabled='continueDisabled(entry_method)' tooltip-placement='left' uib-tooltip='{{continueDisabled(entry_method) ? continueTooltip(entry_method) : null}}'>
+Continue
+</a>
+</div>
+<div class='form-actions center' ng-show='isAuthenticated(entry_method, &#39;twitter&#39;)' style='margin: -13px'>
+<div style='display: inline-block; position: relative; z-index: 1' tooltip-placement='left' uib-tooltip='{{continueDisabled(entry_method) ? continueTooltip(entry_method) : null}}'>
+<a class='btn btn-primary' ng-click='saveEntryDetails(entry_method)' ng-disabled='continueDisabled(entry_method)'>
+<span>
+Continue
+</span>
+</a>
+</div>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Custom&#39;)'>
+Cancel
+</a>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+</script>
+<script id='views/entry-text/youtube_subscribe.html' type='text/ng-template'>
+{{ ::entry_method.config1 }}
+</script>
+<script id='views/entry-details/youtube_subscribe.html' type='text/ng-template'>
+<form class='entry_details compact-box form-compact' name='entryDetailsForm'>
+<div class='form-compact__content center'>
+<div class='form-compact__part'>
+<p>Click here to ensure you are subscribed:</p>
+</div>
+<div class='form-compact__part'>
+<p class='visit-trigger'>
+<a class='btn btn-large btn-info btn-embossed' ng-href='{{::entry_method.config2}}?sub_confirmation=1' rel='noopener' target='_blank'>
+<i class='fa fa-youtube'></i>
+&nbsp;
+Subscribe here
+</a>
+</p>
+</div>
+</div>
+<div class='form-actions center'>
+<button class='btn btn-primary' ng-click='saveEntryDetails(entry_method)' ng-disabled='continueDisabled(entry_method)'>
+Continue
+</button>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|YouTube Subscribe&#39;)'>
+Cancel
+</a>
+</div>
+</form>
+
+</script>
+<script id='views/entry-text/youtube_watch.html' type='text/ng-template'>
+{{ ::entry_method.config1 }}
+</script>
+<script id='views/entry-details/youtube_watch.html' type='text/ng-template'>
+<form class='entry_details compact-box form-compact' name='entryDetailsForm'>
+<div class='cover-video-container'>
+<div class='cover-video youtube youtube-lazy-init' frameBorder='0' id='youtubeVideo{{entry_method.id}}'></div>
+</div>
+<div class='form-actions center'>
+<button class='btn btn-primary disabled' ng-hide='entry_method.timePassed' tooltip-placement='top' uib-tooltip='Please watch video to the end to continue'>
+Continue
+</button>
+<button class='btn btn-primary' ng-click='videoWatched(entry_method)' ng-show='entry_method.timePassed'>
+Continue
+</button>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Youtube&#39;)'>
+Cancel
+</a>
+</div>
+</form>
+
+</script>
+<script id='views/entry-details/templates/visit.html' type='text/ng-template'>
+<form class='entry_details compact-box form-compact' name='entryDetailsForm'>
+<div class='form-compact__content'>
+<div class='form-compact__part visit-trigger user-fragment center' ng-bind-html='::entry_method.config3' ng-if='entry_method.config3 &amp;&amp; !actionPerformed(entry_method)'></div>
+<div class='form-compact__part center' ng-if='entry_method.workflow == &#39;VisitQuestion&#39; &amp;&amp; entry_method.config4 &amp;&amp; hasVisited(entry_method)'>
+<div class='text input optional form-group' ng-show='::entry_method.config4'>
+<div class='form-wrapper center'>
+<label for='em{{::entry_method.id}}Details'>
+<h4 class='center'>
+{{ entry_method.config4 }}
+</h4>
+</label>
+<div class='center' ng-if='::!entry_method.config5'>
+<input id='em{{::entry_method.id}}Details' name='data' ng-model='entryState.formData[entry_method.id]' required style='width: 200px' type='text'>
+</div>
+<div class='center' ng-if='entry_method.config5'>
+<select id='em{{::entry_method.id}}Details' name='data' ng-model='entryState.formData[entry_method.id]' required style='width: 300px' type='text'>
+<option ng-repeat='option in ::entry_method.config5|commaSplit|uniq' ng-value='option'>
+{{::option}}
+</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='form-actions center'>
+<div style='display: inline-block; position: relative; z-index: 1' uib-tooltip='{{continueTooltip(entry_method)}}'>
+<a class='btn btn-primary' ng-click='saveEntryDetails(entry_method)' ng-disabled='continueDisabled(entry_method)'>
+<span ng-hide='!(isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed)'>
+{{ pl(entry_method.config.remainingSeconds(entry_method), "tooltip_delay_singular", "tooltip_delay_plural") }}
+</span>
+<span ng-hide='isTimerAction(entry_method) &amp;&amp; !entry_method.timePassed'>
+Continue
+</span>
+</a>
+</div>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Visit&#39;)'>
+Cancel
+</a>
+</div>
+</form>
+
+</script>
+
+<div id="fb-root"></div>
+<script>
+window.facebookAppId = "152351391599356";
+angular.element(document).ready(function () {
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : window.facebookAppId,
+      status     : true,
+      xfbml      : true,
+      version    : "v2.7"
+    });
+
+    FB.Event.subscribe('edge.create', function(url) {
+      $('[ng-controller=EnterController]').scope().handleLike(url);
+    });
+
+    FB.getLoginStatus(function (data) {
+      var entryScope = $('[ng-controller=EnterController]').scope();
+      if(entryScope) {
+          entryScope.facebookContestantLoginStatus(data);
+      }
+
+      var _loginScope = $('[ng-controller=LoginController]');
+    });
+
+    var app = window.Gleam;
+
+    if(app && app.resizeContent) {
+      angular.element(document).ready(function () {
+        app.resizeContent();
+      });
+    }
+
+    if(FB.Canvas && FB.Canvas.setAutoGrow) {
+      FB.Canvas.setAutoGrow(91);
+    }
+
+    $('.facebook-lazy-init').each(function () {
+      var elem = this,
+        scope = $(this).scope();
+      if(scope && scope.entry_method) {
+        // Immediate load on-expand
+        scope.entry_method.onExpand = function () {
+          fbLazyInitPost.call(elem);
+        };
+
+        // Delayed pre-load
+        setTimeout(function() { fbLazyInitPost.call(elem) }, 1000);
+      }
+    });
+  };
+
+  window.fbLazyInitPost = function() {
+    var $this = $(this);
+    var lazyClass = "fb-post";
+    var scope = angular.element(this).scope();
+    var player;
+    var mobileTimeout;
+    var expanded = false;
+
+    // Facebook's video API doesn't work properly on mobiles
+    initMobileVideoTimer = function() {
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      var mobileTimer;
+
+      if (!expanded || !isMobile || mobileTimeout) {
+        return
+      }
+
+      if (player && player.getDuration && player.getDuration() > 1) {
+        mobileTimer = player.getDuration() * 1000;
+      } else {
+        mobileTimer = 30000; // workaround for https://developers.facebook.com/support/bugs/338091156930372/
+      }
+
+      mobileTimeout = setTimeout(function () {
+        scope.$apply(function () {
+          scope.videoFinishedPlaying(scope.entry_method);
+        })
+      }, mobileTimer)
+    }
+
+    if(scope.entry_method.config3 == "video") {
+      lazyClass = "fb-video";
+    }
+
+    if( !$this.hasClass(lazyClass) ) {
+      $this.addClass(lazyClass);
+
+      // Render Embedded element
+      FB.XFBML.parse($this.parent()[0]);
+
+      FB.Event.subscribe('xfbml.render', function(msg) {
+        scope.resize();
+      });
+
+      // Get Embedded Video Player API Instance
+      FB.Event.subscribe("xfbml.ready", function(msg) {
+        if (msg.type === "video" && msg.id === ("facebookPost" + scope.entry_method.id)) {
+          player = msg.instance;
+
+          player.subscribe('finishedPlaying', function(e) {
+            scope.videoFinishedPlaying(scope.entry_method);
+            scope.$apply();
+          });
+
+          if (expanded) {
+            player.play();
+          }
+
+          initMobileVideoTimer();
+        }
+      });
+
+      scope.entry_method.onExpand = function () {
+        expanded = true;
+        try {
+          player.play();
+        } catch(e) {
+        }
+
+        initMobileVideoTimer();
+      };
+
+      scope.entry_method.onUnexpand = function () {
+        expanded = false;
+        try {
+          player.pause();
+        } catch(e) {
+        }
+      };
+    }
+  };
+
+  if (window.FB) { // FB script already loaded
+    window.fbAsyncInit();
+  }
+});
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.async = true;
+    // https because of weird bug http://stackoverflow.com/a/13281719/600638
+    js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId="+encodeURIComponent(window.facebookAppId);
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+//<![CDATA[
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function initYoutubeVideo() {
+  var $t = $(this);
+
+  if(!window.YT || !window.YT.Player) {
+    $t.addClass('youtube-auto-init');
+    return;
+  }
+
+  if (!window.devicePixelRatio && window.screen.deviceXDPI && window.screen.logicalXDPI) {
+    window.devicePixelRatio = window.devicePixelRatio ||
+      window.screen.deviceXDPI / window.screen.logicalXDPI;
+  }
+
+  var heightOffset = 0;
+  if (window.devicePixelRatio == 1) {
+    // Force hide 1px black bar on standard-res devices
+    heightOffset = 3;
+  }
+
+  var width = $('.popup-blocks-container').width(),
+      height = Math.floor((width * 9) / 16) - heightOffset,
+      player;
+
+  $t.parent().height(height);
+
+  var playerVars = { controls: 1, disablekb: 0, rel: 0, modestbranding: 1, showinfo: 1, autoplay: 0 };
+
+  var scope = angular.element(this).scope();
+  if(!scope) return;
+
+  var videoId, callback, postInit;
+
+  if(scope.entry_method) {
+    scope.entry_method.onExpand = function () {
+      try {
+        if (!navigator.userAgent.match(/iPod|iPhone/) && ((scope.entry_method.config4 + '').match(/autoplay=1/i) || player.getCurrentTime() > 0)) {
+          player.playVideo();
+        }
+      } catch (e) {
+      }
+    };
+
+    scope.entry_method.onUnexpand = function () {
+      try {
+        player.pauseVideo();
+      } catch (e) {
+      }
+    };
+
+    var pairs = (scope.entry_method.config4+'').split(/&/);
+    var pair;
+
+    for(var i = 0; i < pairs.length; i++) {
+      pair = pairs[i].split('=');
+      if(pair.length == 2 && pair[0].toLowerCase() != 'autoplay') {
+        playerVars[pair[0]] = pair[1];
+      }
+    }
+    videoId = scope.entry_method.config3;
+    callback  = function (event) {
+      scope.youtubeVideoStateChange(scope.entry_method, event);
+      scope.$apply();
+    };
+
+    postInit = function () {
+      var grace = 5;
+      var secondsOpen;
+      var interval = setInterval(function () {
+        secondsOpen = scope.entry_method.secondsOpen || 0;
+
+        if(player && player.getDuration && player.getDuration() >  1 && (player.getDuration() > grace || secondsOpen > player.getDuration())) {
+          if(player.getCurrentTime() > (player.getDuration() - grace) || secondsOpen > player.getDuration()) {
+            scope.$apply(function () {
+              clearInterval(interval);
+              setTimeout(function () {
+                scope.entry_method.timePassed = true
+              }, (grace-1) * 1000);
+            });
+          }
+        }
+      }, 1000);
+    }
+  } else {
+    videoId = scope.incentives[0].youtube_video_id;
+    callback = postInit = function() {}
+  }
+
+  if(window.YT && window.YT.Player) {
+    player = new YT.Player(this.id, {
+      height: height,
+      width: width,
+      videoId: videoId,
+      playerVars: playerVars,
+      events: {onStateChange: callback}
+    });
+
+    postInit();
+  }
+}
+angular.element(document).ready(function () {
+  setTimeout(function () {
+    $('.youtube-lazy-init').each(function () {
+      var elem = this,
+          scope = $(this).scope();
+      if(scope && scope.entry_method) {
+        scope.entry_method.onExpand = function () {
+          initYoutubeVideo.call(elem);
+          $(elem).addClass('.youtube-auto-init');
+        }
+      }
+    });
+  }, 1);
+});
+
+function onYouTubeIframeAPIReady() {
+  $(function () {
+    $('.youtube-auto-init').each(initYoutubeVideo)
+  })
+}
+
+
+//]]>
+</script><script>
+//<![CDATA[
+
+    angular.element(document).ready(
+  function () { setTimeout(function () {
+    window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+    var twitterReady = function (twttr) {
+      function parseTwitterElements() {
+        function initTweetBox(t, tweetOpts, refreshOnUnexpand) {
+          var $t = $(t);
+          if(!$t.attr('twitter-parsed')) {
+            $t.attr('twitter-parsed', true);
+
+            var scope = angular.element(t).scope();
+            var entry_method = scope.entry_method;
+            var tweetUrl = $t.data('tweet-url');
+            var tweetId = tweetUrl.match(/\/status\/(\d+)/i)[1];
+
+            twttr.widgets.createTweet(
+              tweetId, t, function (iframe) { scope.resize() }, tweetOpts
+            );
+
+            if (refreshOnUnexpand) {
+              var will_remount = false; // remount tweet to stop playing video on unexpand
+              scope.entry_method.onExpand = function () {
+                will_remount = true;
+              }
+
+              scope.entry_method.onUnexpand = function () {
+                if (will_remount) {
+                  $t.html('');
+                  twttr.widgets.createTweet(
+                    tweetId, t, function (iframe) { scope.resize() }, tweetOpts
+                  );
+                  will_remount = false;
+                }
+              };
+            }
+
+          }
+        }
+
+        $('.retweet-box').each(function () {
+          initTweetBox(this, {
+            conversation: 'none',
+            cards: 'none'
+          });
+        });
+
+        $('.tweet-box').each(function () {
+          initTweetBox(this, {
+            conversation: 'none'
+          }, true);
+        });
+      }
+
+      $('body').bind('widget:thirdpartyparse', function () {
+        setTimeout(parseTwitterElements, 500);
+      });
+
+      setTimeout(parseTwitterElements, 500);
+
+      function showExtra(event) {
+        var scope = angular.element(event.target).scope();
+        scope.showExtra(scope.entry_method);
+        scope.$apply();
+      }
+
+      twttr.events.bind('retweet', function (event) {
+        showExtra(event);
+      });
+    }
+
+    var twitterReadychecker = setInterval(function () {
+      if(window.twttr && window.twttr.ready) {
+        clearInterval(twitterReadychecker);
+        twttr.ready(twitterReady);
+      }
+    }, 100);
+  }, 1);
+});
+
+//]]>
+</script>
+<!--[if lte IE 9]>
+<style type="text/css">
+.twitter-button {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#dedede');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dedede')";
+}
+
+.twitter-button:hover, .twitter-button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f8f8f8', endColorstr = '#d9d9d9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='#d9d9d9')";
+}
+
+.twitter-button:active {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f8f8f8', endColorstr = '#d9d9d9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8',endColorstr='#d9d9d9')";
+}
+
+.twitter-button i {
+    _background-image: url(/widgets/images/btn.80461603b10bcad420939ef5204c466a.gif);
+}</style>
+<![endif]-->
+<script type="text/javascript">
+    window.___gcfg = {lang: "en_US"};
+
+    angular.element(document).ready(function () { setTimeout(function () {
+    window.GooglePlusCallback = function () {
+        $('.g-follow').each(function () {
+            var $t = $(this);
+            gapi.follow.render($t[0], {
+                size: 'tall',
+                annotation: 'vertical-bubble',
+                height: '24',
+                width: '300',
+                href: $t.data('googleplus-url'),
+                callback: function (data) {
+                    var scope = angular.element($t).scope();
+                    if(data.state === 'on') {
+                        scope.handleGoogleplusFollow(scope.entry_method);
+                    }
+                }
+            });
+        });
+        $('.g-plusone').each(function () {
+            var $t = $(this);
+            gapi.plusone.render($t[0], {
+                recommendations: false,
+                height: 60,
+                width: 50,
+                size: 'tall',
+                annotation: 'bubble',
+                href: $t.data('googleplus-url'),
+                callback: function (data) {
+                    var scope = angular.element($t).scope();
+                    if(data.state === 'on') {
+                        if(scope.entry_method.entry_type == 'googleplus_plusone') {
+                            $t.fadeOut(2000);
+                            setTimeout(function () {
+                                scope.handlePlusOne(scope.entry_method);
+                            }, 2000);
+                        } else {
+                            scope.handlePlusOne(scope.entry_method);
+                        }
+                    }
+                }
+            });
+        });
+    };
+
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    if(navigator.userAgent.match(/MSIE 8\./)) {
+      po.text = "{parsetags: 'explicit'}";
+    } else {
+      po.innerHTML = "{parsetags: 'explicit'}";
+    }
+    po.src = 'https://apis.google.com/js/plusone.js?onload=GooglePlusCallback';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  }, 1); });
+</script>
+
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US </script>
+<script>
+//<![CDATA[
+
+//  "li_gen_1457503235994_0 {"method":"resize","params":[81,62],"id":2,"jsonrpc":"2.0"}"
+(function () {
+  function linkedinCallback(e) {
+    if(e && e.data && e.data.match && e.data.match(/resize.*id.:2/)) {
+      var elementId = e.data.match(/gen_(\d+)_/)[1];
+      var scope = $("iframe[id*='_"+elementId+"_']").scope();
+      scope.triggerVisit(scope.entry_method.id);
+    }
+  }
+
+  window.addEventListener("message", linkedinCallback, false);
+})();
+
+//]]>
+</script>
+<script>
+  window.conversionTracking = [];
+</script>
+<script id='/vnks6/ng-view/enter/contestant-details.html' type='text/ng-template'>
+<form class='contestant compact-box form-compact' name='contestantForm' ng-init='initFacebook()'>
+<fieldset class='center' ng-show='(!contestantState.emailLogin &amp;&amp; !campaign.details_first &amp;&amp; campaign.login_first &amp;&amp; !contestantState.contestant.id) || socialLoginRequired()'>
+<p style='margin-top: 15px'>
+{{ ::pl(campaign.login_types.length, 'login_one_first', 'login_using') }}
+</p>
+<div class='center login-choice login-types-{{::campaign.login_types.length}}'>
+<ul>
+<li ng-repeat='provider in ::campaign.login_types'>
+<a class='no-underline {{::provider | firstPart}}-background popup-window' data-track-event='###APP_NAME### Login|{{::provider}}' href='javascript:void(0)' ng-click='openAuthentication(provider)' uib-tooltip='{{::provider | firstPart | capitalStart | onlyOnDesktop }}'>
+<i class='fa fa-{{::provider | firstPart | providerIcon}}'></i>
+<span class='login-block--prefix'>Login with</span>
+<span class='login-block--text'>
+{{ ::provider | firstPart | tProvider }}
+</span>
+</a>
+</li>
+</ul>
+</div>
+</fieldset>
+<fieldset class='inputs' ng-show='!socialLoginRequired() &amp;&amp; (!campaign.login_first || contestantState.emailLogin || campaign.details_first || (contestantState.contestant.id &amp;&amp; requiresInitialLogin()) || contestantState.unconfirmed || (entry_method &amp;&amp; entry_method.always_require_email &amp;&amp; !contestantState.contestant.email))'>
+<div class='center details-header' ng-switch='::isReward()'>
+<h4 ng-switch-when='true'>{{ ::"Please enter your details" | i18nr | unescapeAmp | unescapeQuote }}</h4>
+<div ng-switch-when='false'>
+<div ng-if='campaign.additional_contestant_details &amp;&amp; contestantStep==0'>
+<h4 ng-if='::campaign.login_first'>{{ ::"Please complete your details to begin" | i18nr | unescapeAmp | unescapeQuote }}</h4>
+<h4 ng-if='::!campaign.login_first'>{{ ::"Please enter your details to complete your entry" | i18nr | unescapeAmp | unescapeQuote }}</h4>
+</div>
+<div ng-if='::!campaign.additional_contestant_details'>
+<h4 ng-if='::campaign.login_first'>{{ ::"In order to contact you we need an email" | i18nr | unescapeAmp | unescapeQuote }}</h4>
+<h4 ng-if='::!campaign.login_first'>{{ ::"In order to contact you we need an email" | i18nr | unescapeAmp | unescapeQuote }}</h4>
+</div>
+</div>
+</div>
+<div class='form-horizontal'>
+<div ng-init='contestantSteps=1'>
+<div class='contestant-form-group' ng-if='contestantStep==0'>
+<div class='input required stringish form-group' ng-class='{error: contestantForm.name.$invalid &amp;&amp; contestantForm.name.$dirty, success: contestantForm.name.$valid}'>
+<label class='control-label' for='contestant[name]'>Full Name</label>
+<div class='form-wrapper'>
+<input id='contestant[name]' name='name' ng-model-options='{ debounce: 300 }' ng-model='contestantState.form.name' ng-pattern='::nameRegex' placeholder='Alice Smith' required style='width: 246px' type='text'>
+<div class='help-inline' ng-hide='contestantForm.name.$viewValue'>Required</div>
+</div>
+</div>
+
+
+<div class='email input required stringish form-group' ng-class='{error: ((contestantState.form.email &amp;&amp; contestantState.form.email == contestantState.failedEmail) || (contestantForm.email.$invalid &amp;&amp; contestantForm.email.$dirty)), success: contestantState.form.email != contestantState.failedEmail &amp;&amp; contestantForm.email.$valid}'>
+<label class='control-label' for='contestant[email]'>Email</label>
+<div class='form-wrapper'>
+<input id='contestant[email]' name='email' ng-change='contestantState.failedEmail = nil' ng-model-options='{ debounce: 300 }' ng-model='contestantState.form.email' pattern='[A-Z0-9._%a-z\-+]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,12}' placeholder='alice.smith@example.com' required style='width: 246px; -webkit-appearance: none;' type='email'>
+<div class='help-inline' ng-hide='contestantForm.email.$viewValue'>Required</div>
+<div class='help-inline error' ng-show='contestantState.form.email &amp;&amp; contestantState.form.email == contestantState.failedEmail'>
+{{ t(contestantState.failedEmailKey) }}
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class='contestant-form-group' ng-if='contestantStep==0'>
+<div class='boolean input optional form-group' ng-hide='::isReward() || !campaign.show_competition_subscription'>
+<div class='form-wrapper'>
+<label class='checkbox'>
+<span class='icon'></span>
+<span class='icon-to-fade'></span>
+<input ng-model='contestantState.form.competition_subscription' type='checkbox'>
+{{ ::"Notify me of other %{site_name} Competitions" | i18nr:'site_name':campaign.site_name | unescapeAmp | unescapeQuote }}
+{{ ::"(optional)" | i18nr | unescapeAmp | unescapeQuote }}
+</label>
+</div>
+</div>
+<div data-campaign-facebook ng-if='::campaign.facebook_url'>
+<p>
+<i class='fa fa-thumbs-o-up' style='margin: 0 10px 0 6px;'></i>
+<span>Like us on Facebook for updates (optional)</span>
+</p>
+<div class='fb-like fb-like--lazy-init' data-header='false' data-show-border='false' data-show-faces='false' data-stream='false' data-width='360' ng-hide='campaign.liked' ng-href='{{::campaign.facebook_url}}' xfbml-parse></div>
+</div>
+</div>
+</fieldset>
+<div class='form-actions center' ng-show='(!campaign.login_first || contestantState.emailLogin || campaign.details_first || contestantState.contestant.id) &amp;&amp; !socialLoginRequired()'>
+<span style='position: inline-block; position: relative'>
+<button class='btn btn-primary' ng-click='setNextStep()' ng-disabled='contestantForm.$invalid' ng-if='nextStepAvailable()'>
+<span>
+Continue
+</span>
+</button>
+<button class='btn btn-primary' ng-click='setContestant()' ng-disabled='contestantForm.$invalid || contestantState.sending' ng-if='!nextStepAvailable()'>
+<span class='fa fa-refresh fa-spin' ng-show='contestantState.sending'></span>
+<span ng-if='::campaign.login_first'>Continue</span>
+<span ng-if='::!campaign.login_first'>Save</span>
+</button>
+<span ng-show='contestantButtonTooltip(contestantForm.$valid)' style='position: absolute; z-index: 1; top: 0; bottom: 0; left: 0; right: 0' tooltip-placement='top' uib-tooltip='{{contestantButtonTooltip(contestantForm.$valid)}}'></span>
+</span>
+<span ng-hide='::campaign.login_first &amp;&amp; campaign.details_first'>
+<a href='javascript:void(0)' ng-click='cancelEntry(&#39;###APP_NAME### Click|Cancel|Contestant&#39;)'>
+Cancel
+</a>
+</span>
+</div>
+</form>
+
+</script>
+
+</div>
+
+</div>
+</div>
+
+<script>
+//<![CDATA[
+
+if(window.customGa) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', window.customGa, 'auto');
+  ga('send', 'pageview', window.pageViewOveride)
+}
+
+//]]>
+</script>
+</body>
+</html>
